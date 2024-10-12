@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "@/components/layouting/header";
+import Footer from "@/components/layouting/footer";
 
 export const metadata: Metadata = {
 	title: {
@@ -17,7 +19,11 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="fr">
-			<body>{children}</body>
+			<body className="flex flex-col gap-16">
+				<Header />
+				{children}
+				<Footer />
+			</body>
 		</html>
 	);
 }
