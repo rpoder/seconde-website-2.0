@@ -14,6 +14,8 @@ import {
 } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
 import { useRouter } from "next/navigation";
+import Logo from "@/../public/logo-seconde.png";
+import Image from "next/image";
 
 function RoadmapItemComponent({ title, description }: RoadmapItem) {
 	return (
@@ -75,7 +77,12 @@ export default function Page() {
 			</Button>
 			<div className="flex md:flex-col gap-8 flex-col w-full">
 				<div className="flex flex-col gap-2 items-start w-full">
-					<img src="/logo-seconde.png" alt="Logo" className="w-48" />
+					<Image
+						alt="logo seconde"
+						src={Logo}
+						width={230}
+						unoptimized
+					/>
 					<p>
 						Cette feuille de route offre une vue d'ensemble des
 						fonctionnalités actuelles, et des évolutions prévues.

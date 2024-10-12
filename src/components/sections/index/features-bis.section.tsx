@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import { features } from "./features-bis.data";
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function FeaturesBis() {
 	return (
@@ -17,7 +17,7 @@ export default function FeaturesBis() {
 						>
 							<h3>{feature.title}</h3>
 							<p>{feature.description}</p>
-							<img src={feature.imageSrc} alt={feature.title} />
+							{/* <img src={feature.imageSrc} alt={feature.title} /> */}
 						</div>
 					))}
 				</div>

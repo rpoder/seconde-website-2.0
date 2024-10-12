@@ -2,8 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { features } from "./features.data";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Plus, PlusCircle, Telescope } from "lucide-react";
+import { Telescope } from "lucide-react";
 
 export default function Features() {
 	return (
