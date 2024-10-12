@@ -12,7 +12,6 @@ import {
 	AccordionItem,
 	AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Badge } from "@/components/ui/badge";
 import { useRouter } from "next/navigation";
 import Logo from "@/../public/logo-seconde.png";
 import Image from "next/image";
@@ -37,17 +36,14 @@ function RoadmapItemComponent({ title, description }: RoadmapItem) {
 function RoadmapColumnComponent({
 	title,
 	items,
-	tag,
 }: {
 	title: string;
-	tag?: string;
 	items: RoadmapItem[];
 }) {
 	return (
 		<div className="w-full flex flex-col gap-4">
 			<div className=" bg-slate-100 border bg-opacity-30 px-6 py-6 rounded flex flex-col gap-2 justify-center items-start">
 				<p className="font-bold">{title}</p>
-				{/* {tag && <Badge variant="valid">{tag}</Badge>} */}
 			</div>
 			<div className="flex flex-col gap-4">
 				{items.map((item, index) => (
@@ -100,7 +96,6 @@ export default function Page() {
 						<RoadmapColumnComponent
 							title={column.title}
 							items={column.items}
-							tag={column.tag}
 							key={index}
 						/>
 					))}
