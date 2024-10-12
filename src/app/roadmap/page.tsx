@@ -38,20 +38,16 @@ function RoadmapColumnComponent({
 	title,
 	items,
 	tag,
-	isBeta,
 }: {
 	title: string;
 	tag?: string;
 	items: RoadmapItem[];
-	isBeta?: boolean;
 }) {
 	return (
 		<div className="w-full flex flex-col gap-4">
 			<div className=" bg-slate-100 border bg-opacity-30 px-6 py-6 rounded flex flex-col gap-2 justify-center items-start">
 				<p className="font-bold">{title}</p>
-				{tag && (
-					<Badge variant={isBeta ? "valid" : "warning"}>{tag}</Badge>
-				)}
+				{/* {tag && <Badge variant="valid">{tag}</Badge>} */}
 			</div>
 			<div className="flex flex-col gap-4">
 				{items.map((item, index) => (
@@ -105,7 +101,6 @@ export default function Page() {
 							title={column.title}
 							items={column.items}
 							tag={column.tag}
-							isBeta={column.isBeta}
 							key={index}
 						/>
 					))}
