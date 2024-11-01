@@ -27,6 +27,7 @@ const config: Config = {
 				secondary: {
 					DEFAULT: "hsl(var(--secondary))",
 					foreground: "hsl(var(--secondary-foreground))",
+					darker: "hsl(var(--secondary-darker))",
 				},
 				muted: {
 					DEFAULT: "hsl(var(--muted))",
@@ -35,6 +36,9 @@ const config: Config = {
 				accent: {
 					DEFAULT: "hsl(var(--accent))",
 					foreground: "hsl(var(--accent-foreground))",
+					secondary: "hsl(var(--accent-secondary))",
+					"secondary-foreground":
+						"hsl(var(--accent-secondary-foreground))",
 				},
 				info: {
 					DEFAULT: "hsl(var(--info))",
@@ -68,8 +72,8 @@ const config: Config = {
 			},
 			borderRadius: {
 				lg: "var(--radius)",
-				md: "calc(var(--radius) - 2px)",
-				sm: "calc(var(--radius) - 4px)",
+				md: "calc(var(--radius) - 4px)",
+				sm: "calc(var(--radius) - 6px)",
 			},
 			keyframes: {
 				"accordion-down": {
@@ -92,6 +96,28 @@ const config: Config = {
 			animation: {
 				"accordion-down": "accordion-down 0.2s ease-out",
 				"accordion-up": "accordion-up 0.2s ease-out",
+			},
+			fontFamily: {
+				Gibson: ["canada-type-gibson", "sans-serif"],
+				Seasons: ["the-seasons", "sans-serif"],
+				Grotesque: ["darker-grotesque", "sans-serif"],
+				Stevie: ["stevie-sans", "sans-serif"],
+			},
+		},
+		container: {
+			// you can configure the container to be centered
+			center: true,
+
+			// or have default horizontal padding
+			padding: "4rem",
+
+			// default breakpoints but with 40px removed
+			screens: {
+				sm: "600px",
+				md: "728px",
+				lg: "984px",
+				xl: "1240px",
+				"2xl": "2000px",
 			},
 		},
 	},

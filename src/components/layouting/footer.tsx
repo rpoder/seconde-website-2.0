@@ -18,7 +18,7 @@ export type LinkCategory = {
 
 export default function Footer(): JSX.Element {
 	return (
-		<footer className="bg-primary text-accent">
+		<footer className="bg-primary text-white">
 			<div className="container mx-auto flex flex-col justify-between gap-8 px-4 py-16">
 				<div className="flex flex-row justify-between">
 					<Link href="/">
@@ -50,7 +50,7 @@ export default function Footer(): JSX.Element {
 														? link.rel
 														: undefined
 												}
-												className="underline text-muted-foreground text-sm"
+												className="underline text-secondary text-sm"
 											>
 												{link.name}
 											</Link>

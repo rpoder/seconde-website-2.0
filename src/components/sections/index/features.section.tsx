@@ -1,56 +1,49 @@
 import { Badge } from "@/components/ui/badge";
-import { features } from "./features.data";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Plus, PlusCircle, Telescope } from "lucide-react";
+import { Feature, features } from "./features.data";
+import { cn } from "@/lib/utils";
+
+function FeatureBox({ title, tag }: Feature) {
+	return (
+		<div
+			className={cn(
+				"relative w-52 h-24 bg-secondary p-6 text-center flex justify-center items-center border"
+			)}
+		>
+			{tag && <Badge className="absolute -top-4 -left-4">{tag}</Badge>}
+			<h2 className="text-base">{title}</h2>
+		</div>
+	);
+}
 
 export default function Features() {
 	return (
-		<section className="mx-auto container px-4 space-y-12 flex flex-col items-center">
-			<Badge variant="outline">Fonctionalités</Badge>
+		<section className="mx-auto container px-4 space-y-20 flex flex-col items-center">
 			<div className="space-y-4">
-				<h2 className="text-center">Vos fonctionalités préférés</h2>
-				<h3 className="text-center">
-					Développé main dans la main avec des boutiques qui vous
-					ressemblent
+				<h3 className="text-center text-2xl">
+					Développé{" "}
+					<b
+						className="font-Gibson italic font-semibold"
+						style={{
+							fontFamily: "canada-type-gibson",
+							fontWeight: 550,
+							fontStyle: "italic",
+						}}
+					>
+						main dans la main
+					</b>{" "}
+					avec des <br />
+					boutiques qui vous ressemblent
 				</h3>
 			</div>
 			<div className="flex flex-row flex-wrap gap-10 justify-center max-w-[1200px]">
-				{features.map((feature, index) => (
-					<div
-						key={index}
-						className="relative w-52 h-24 bg-purple-200 rounded p-6 text-center flex justify-center items-center"
-					>
-						{feature.tag && (
-							<Badge className="absolute -top-4 -left-4">
-								{feature.tag}
-							</Badge>
-						)}
-						<div>{feature.title}</div>
-					</div>
+				{features.slice(0, 4).map((feature, index) => (
+					<FeatureBox key={index} {...feature} />
 				))}
 			</div>
-			<div className="flex flex-row gap-32 items-center">
-				<div className="w-full space-y-8">
-					<div className="space-y-2">
-						<h2>
-							Tout ce dont vous avez besoin, en un seul logiciel
-						</h2>
-						<h4>
-							Retrouvez vos chiffres de la journée, vos dépôts,
-							vos ventes et bien plus. Prévenez en même temps vos
-							déposant dès que son article est vendu
-						</h4>
-					</div>
-					<Button asChild type="button" size="lg">
-						<Link href="/software">
-							<Telescope className="mr-2" size={20} />
-							Explorer le logiciel
-						</Link>
-					</Button>
-				</div>
-				<div className="bg-slate-100 w-full h-96"></div>
+			<div className="flex flex-row flex-wrap gap-10 justify-center max-w-[1200px]">
+				{features.slice(4, features.length).map((feature, index) => (
+					<FeatureBox key={index} {...feature} />
+				))}
 			</div>
 		</section>
 	);

@@ -1,19 +1,19 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
 import Image from "next/image";
-import LogoImage from "@/../public/logo_seconde_indigo.svg";
+import LogoImage from "@/../public/logo_seconde_icon_black.svg";
 import { links } from "./header.data";
 
 export default function Nav(): JSX.Element {
 	return (
 		<header>
-			<nav className="container mx-auto flex flex-row justify-between px-4 py-8">
+			<nav className="container mx-auto flex flex-row justify-between py-8">
 				<div className="flex flex-row gap-8 items-center">
 					<Link href="/">
 						<Image
 							src={LogoImage}
 							alt="logo seconde"
-							className="w-40 -translate-y-1"
+							className="w-14"
 							priority={false}
 						/>
 					</Link>
@@ -34,7 +34,7 @@ export default function Nav(): JSX.Element {
 				</div>
 				<div className="space-x-2">
 					<Button variant="secondary" type="button" asChild>
-						<Link href="request/demo">Demander une démo</Link>
+						<Link href="/request/demo">Demander une démo</Link>
 					</Button>
 					<Button type="button" asChild>
 						<Link

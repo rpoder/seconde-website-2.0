@@ -9,10 +9,10 @@ export const links: LinkItem[] = [
 		name: "Logiciel",
 		href: "/software",
 	},
-	{
-		name: "Tarifs",
-		href: "/prices",
-	},
+	// {
+	// 	name: "Tarifs",
+	// 	href: "/prices",
+	// },
 	{
 		name: "À propos",
 		href: "/about",

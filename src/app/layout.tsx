@@ -19,9 +19,15 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="fr">
-			<body className="flex flex-col gap-16">
+			<head>
+				<link
+					rel="stylesheet"
+					href="https://use.typekit.net/cmh5ses.css"
+				/>
+			</head>
+			<body className="flex flex-col gap-16 font-Stevie">
 				<Header />
-				{children}
+				<div className="flex flex-col gap-24">{children}</div>
 				<Footer />
 			</body>
 		</html>
