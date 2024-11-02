@@ -64,51 +64,50 @@ function NotificationComponent() {
 	);
 }
 
-const firstLine: FeatureBox[] = [
-	{
-		title: "Créez un dépôt en quelques clics",
-		description:
-			"Deux parcours de dépôt au choix pour vous accompagner en toute fluidité selon vos habitudes.",
-		size: "large",
-		textPosition: "top",
-		buttonText: "En savoir plus",
-		buttonHref: "/",
-		videoSrc: "/assets/videos/SEQ-deposit-flow.mp4",
-	},
-	{
-		title: "Notifiez vos déposants automatiquement",
-		description:
-			"Vos deposants seront ravis de suivre leurs depots.. et n’oublieront plus de venir recuperer leurs invendus !",
-		size: "small",
-		textPosition: "bottom",
-		buttonText: "En savoir plus",
-		buttonHref: "/",
-		component: NotificationComponent(),
-	},
+export const features = [
+	[
+		{
+			title: "Créez un dépôt en quelques clics",
+			description:
+				"Deux parcours de dépôt au choix pour vous accompagner en toute fluidité selon vos habitudes.",
+			size: "large",
+			textPosition: "top",
+			buttonText: "En savoir plus",
+			buttonHref: "/software#deposit",
+			videoSrc: "/assets/videos/SEQ-deposit-flow.mp4",
+		},
+		{
+			title: "Notifiez vos déposants automatiquement",
+			description:
+				"Vos deposants seront ravis de suivre leurs depots.. et n’oublieront plus de venir recuperer leurs invendus !",
+			size: "small",
+			textPosition: "bottom",
+			buttonText: "En savoir plus",
+			buttonHref: "/software#alerts",
+			component: NotificationComponent(),
+		},
+	],
+	[
+		{
+			title: "Gérez toutes vos boutiques en un seul outil",
+			description:
+				"Naviguez entre vos boutiques et reconnaissez vos clients tout en dissociant vos stocks.",
+			size: "small",
+			textPosition: "bottom",
+			buttonText: "Essayer gratuitement",
+			buttonHref: "/request/demo",
+			videoSrc: "/assets/videos/SEQ-select-org.mp4",
+			noShadow: true,
+		},
+		{
+			title: "Travaillez avec un logiciel adapté aux dépôts-ventes",
+			description:
+				"Bénéficiez d’une logique de caisse pensée spécifiquement pour les depots-ventes.",
+			size: "large",
+			textPosition: "top",
+			buttonText: "En savoir plus",
+			buttonHref: "/software#accounting",
+			image: SaleImage,
+		},
+	],
 ];
-
-const secondLine: FeatureBox[] = [
-	{
-		title: "Gérez toutes vos boutiques en un seul outil",
-		description:
-			"Naviguez entre vos boutiques et reconnaissez vos clients tout en dissociant vos stocks.",
-		size: "small",
-		textPosition: "bottom",
-		buttonText: "En savoir plus",
-		buttonHref: "/",
-		videoSrc: "/assets/videos/SEQ-select-org.mp4",
-		noShadow: true,
-	},
-	{
-		title: "Travaillez avec un logiciel adapté aux dépôts-ventes",
-		description:
-			"Bénéficiez d’une logique de caisse pensée spécifiquement pour les depots-ventes.",
-		size: "large",
-		textPosition: "top",
-		buttonText: "En savoir plus",
-		buttonHref: "/",
-		image: SaleImage,
-	},
-];
-
-export const features = [firstLine, secondLine];

@@ -3,7 +3,6 @@ import { features } from "./features-bis.data";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Badge } from "@/components/ui/badge";
 
 export default function FeaturesBis() {
 	return (

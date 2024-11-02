@@ -21,35 +21,42 @@ export const demoFormSchema = z.object({
 	message: z.string().optional(),
 });
 
-const firstSlide: InputCarouselItemField[] = [
-	{
-		name: "firstname",
-		label: "Prénom",
-		placeholder: "John",
-	},
-	{
-		name: "lastname",
-		label: "Nom",
-		placeholder: "Doe",
-	},
-	{
-		name: "email",
-		label: "Email",
-		placeholder: "john@gmail.com",
-	},
+const slides: InputCarouselItemField[][] = [
+	[
+		{
+			name: "firstname",
+			label: "Prénom",
+			placeholder: "John",
+		},
+		{
+			name: "lastname",
+			label: "Nom",
+			placeholder: "Doe",
+		},
+		{
+			name: "email",
+			label: "Email",
+			placeholder: "john@gmail.com",
+		},
+	],
+	[
+		{
+			name: "organizationName",
+			label: "Nom de votre boutique",
+			placeholder: "Julie dressing",
+		},
+	],
+	[
+		{
+			name: "message",
+			label: "Votre message",
+			placeholder: "Insérez votre message ici",
+			isTextArea: true,
+		},
+	],
 ];
 
-const secondSlide: InputCarouselItemField[] = [
-	{
-		name: "organizationName",
-		label: "Nom de votre boutique",
-		placeholder: "Julie dressing",
-	},
-];
-
-const slides: InputCarouselItemField[][] = [firstSlide, secondSlide];
-
-export default function RequestDemoCarousel() {
+export default function ContactCarousel() {
 	const [api, setApi] = useState<CarouselApi>();
 	const [current, setCurrent] = useState(0);
 	const [count, setCount] = useState(0);
@@ -94,7 +101,7 @@ export default function RequestDemoCarousel() {
 				}}
 			>
 				<div className="flex flex-col justify-center items-center w-full gap-2">
-					<h3 className="font-semibold">Demande de démo</h3>
+					<h3 className="font-semibold">Écrivez nous</h3>
 					<p className="text-sm">
 						Étape {current}/{count}
 					</p>

@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { CarouselItem } from "@/components/ui/carousel";
 import {
 	FormControl,
-	FormDescription,
 	FormField,
 	FormItem,
 	FormLabel,
@@ -12,12 +11,14 @@ import {
 import { Input } from "@/components/ui/input";
 import React, { useEffect, useRef } from "react";
 import { UseFormReturn } from "react-hook-form";
+import { validate } from "email-validator";
+import { Textarea } from "@/components/ui/textarea";
 
 export type InputCarouselItemField = {
-	name: "firstname" | "lastname" | "email" | "organizationName";
+	name: "firstname" | "lastname" | "email" | "organizationName" | "message";
+	isTextArea?: boolean;
 	label: string;
 	placeholder: string;
-	description: string;
 };
 
 export default function InputsCarouselItem({
@@ -39,10 +40,12 @@ export default function InputsCarouselItem({
 }) {
 	const inputRefs = useRef<HTMLInputElement[]>([]);
 	const canGoNext = () => {
-		return fields.every((fieldValues) => {
+		const emptyFields = fields.every((fieldValues) => {
 			const value = form.watch(fieldValues.name);
 			return value?.length >= 2;
 		});
+		const validEmail = validate(form.watch("email"));
+		return emptyFields && validEmail;
 	};
 
 	const handleKeyDown = (event: React.KeyboardEvent, index: number) => {
@@ -54,8 +57,8 @@ export default function InputsCarouselItem({
 			}
 		}
 		if (event.key === "Tab") {
-			event.preventDefault();
 			if (!canGoNext()) {
+				event.preventDefault();
 				inputRefs.current[index + 1]?.focus();
 			}
 		}
@@ -64,7 +67,6 @@ export default function InputsCarouselItem({
 	useEffect(() => {
 		if (isCurrent) {
 			setTimeout(() => {
-				console.log(inputRefs.current[0]);
 				inputRefs.current[0]?.focus();
 			}, 300);
 		}
@@ -73,36 +75,66 @@ export default function InputsCarouselItem({
 	return (
 		<>
 			<CarouselItem>
-				{fields.map((fieldValues, key) => (
-					<FormField
-						key={key}
-						control={form.control}
-						name={fieldValues.name}
-						render={({ field }) => (
-							<FormItem className="py-2">
-								<FormLabel>{fieldValues.label}</FormLabel>
-								<FormControl>
-									<Input
-										placeholder={fieldValues.placeholder}
-										{...field}
-										ref={(el) =>
-											(inputRefs.current[key] = el!)
-										}
-										onKeyDown={(event) =>
-											handleKeyDown(event, key)
-										}
-									/>
-								</FormControl>
-								<FormDescription>
-									{fieldValues.description}
-								</FormDescription>
-							</FormItem>
-						)}
-					/>
-				))}
-				<Button onClick={onClick} disabled={!canGoNext()} type="button">
-					Suivant
-				</Button>
+				<div className="px-8">
+					{fields.map((fieldValues, key) => (
+						<FormField
+							key={key}
+							control={form.control}
+							name={fieldValues.name}
+							render={({ field }) => (
+								<FormItem className="py-2">
+									<FormLabel>{fieldValues.label}</FormLabel>
+									<FormControl>
+										{fieldValues.isTextArea ? (
+											<Textarea
+												placeholder={
+													fieldValues.placeholder
+												}
+												{...field}
+												ref={(el) =>
+													(inputRefs.current[key] =
+														el!)
+												}
+												onKeyDown={(event) =>
+													handleKeyDown(event, key)
+												}
+												className="border-primary"
+											/>
+										) : (
+											<Input
+												placeholder={
+													fieldValues.placeholder
+												}
+												{...field}
+												ref={(el) =>
+													(inputRefs.current[key] =
+														el!)
+												}
+												onKeyDown={(event) =>
+													handleKeyDown(event, key)
+												}
+												className="border-primary"
+											/>
+										)}
+									</FormControl>
+								</FormItem>
+							)}
+						/>
+					))}
+					<Button
+						onClick={onClick}
+						disabled={!canGoNext()}
+						type="button"
+						className="mt-4 w-full"
+						onKeyDown={(event) => {
+							if (event.key === "Enter") {
+								onClick();
+							}
+						}}
+					>
+						Suivant
+					</Button>
+				</div>
 			</CarouselItem>
 		</>
 	);

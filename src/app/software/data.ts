@@ -9,6 +9,7 @@ export type Feature = {
 export type FeatureGroup = {
 	title: string;
 	descriptions: string[];
+	id?: string;
 	image?: {
 		src: StaticImageData;
 		alt: string;
@@ -18,6 +19,7 @@ export type FeatureGroup = {
 
 export const featureGroups: FeatureGroup[] = [
 	{
+		id: "deposit",
 		title: "Gérez vos dépôts",
 		descriptions: [
 			"Enregistrez des dépôts classiques, des dépôts en achat comptant, des dons, des achats fournisseurs, ou un peu de tout !",
@@ -76,6 +78,7 @@ export const featureGroups: FeatureGroup[] = [
 		],
 	},
 	{
+		id: "accounting",
 		title: "Vendez, encaissez, remboursez",
 		descriptions: ["Le logiciel de caisse adapté à votre dépôt-vente !"],
 		features: [
@@ -92,6 +95,7 @@ export const featureGroups: FeatureGroup[] = [
 		],
 	},
 	{
+		id: "alerts",
 		title: "Tenez vos déposants au courant",
 		descriptions: [
 			"Accompagner vos déposants et leur simplifier la vie, c’est aussi notre mission !",
