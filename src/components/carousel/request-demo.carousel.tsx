@@ -52,7 +52,7 @@ const slides: InputCarouselItemField[][] = [firstSlide, secondSlide];
 
 export default function RequestDemoCarousel() {
 	const [success, setSuccess] = useState(false);
-	const [_, setError] = useState(false);
+	const [, setError] = useState(false);
 	const [api, setApi] = useState<CarouselApi>();
 	const [current, setCurrent] = useState(0);
 	const [count, setCount] = useState(0);
