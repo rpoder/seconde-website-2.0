@@ -13,10 +13,10 @@ export const links: LinkItem[] = [
 	// 	name: "Tarifs",
 	// 	href: "/prices",
 	// },
-	{
-		name: "À propos",
-		href: "/about",
-	},
+	// {
+	// 	name: "À propos",
+	// 	href: "/about",
+	// },
 	{
 		name: "Contact",
 		href: "/contact",

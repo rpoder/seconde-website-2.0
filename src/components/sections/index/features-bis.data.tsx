@@ -1,7 +1,6 @@
 import { StaticImageData } from "next/image";
 import SaleImage from "@/../public/assets/images/sale.jpg";
 import { cn } from "@/lib/utils";
-import { text } from "stream/consumers";
 
 export type FeatureBox = {
 	title: string;
@@ -64,7 +63,20 @@ function NotificationComponent() {
 	);
 }
 
-export const features = [
+export type Feature = {
+	title: string;
+	description: string;
+	buttonText: string;
+	buttonHref: string;
+	size: "small" | "large";
+	textPosition: "top" | "bottom";
+	image?: StaticImageData;
+	component?: JSX.Element;
+	videoSrc?: string;
+	noShadow?: boolean;
+};
+
+export const features: Feature[][] = [
 	[
 		{
 			title: "Créez un dépôt en quelques clics",

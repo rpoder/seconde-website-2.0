@@ -38,11 +38,11 @@ export default function InputsCarouselItem({
 	onClick: () => void;
 	isCurrent: boolean;
 }) {
-	const inputRefs = useRef<HTMLInputElement[]>([]);
+	const inputRefs = useRef<(HTMLInputElement | HTMLTextAreaElement)[]>([]);
 	const canGoNext = () => {
 		const emptyFields = fields.every((fieldValues) => {
 			const value = form.watch(fieldValues.name);
-			return value?.length >= 2;
+			return (value?.length || 0) >= 2;
 		});
 		const validEmail = validate(form.watch("email"));
 		return emptyFields && validEmail;
@@ -91,10 +91,10 @@ export default function InputsCarouselItem({
 													fieldValues.placeholder
 												}
 												{...field}
-												ref={(el) =>
-													(inputRefs.current[key] =
-														el!)
-												}
+												ref={(el) => {
+													inputRefs.current[key] =
+														el!;
+												}}
 												onKeyDown={(event) =>
 													handleKeyDown(event, key)
 												}
@@ -106,10 +106,10 @@ export default function InputsCarouselItem({
 													fieldValues.placeholder
 												}
 												{...field}
-												ref={(el) =>
-													(inputRefs.current[key] =
-														el!)
-												}
+												ref={(el) => {
+													inputRefs.current[key] =
+														el!;
+												}}
 												onKeyDown={(event) =>
 													handleKeyDown(event, key)
 												}

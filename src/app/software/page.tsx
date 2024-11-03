@@ -5,16 +5,16 @@ import Image from "next/image";
 export default function page() {
 	return (
 		<div className="container mx-auto flex flex-col gap-20">
-			<div className="w-full">
+			<div className="w-full space-y-4">
 				<h1>Que pouvez-vous faire avec Seconde ?</h1>
+				<div className="w-full h-96 bg-[url('/assets/images/thrift-shop.jpeg')] bg-cover bg-[center_top_-100px] flex flex-col justify-center items-center" />
 			</div>
-			<div className="w-full h-96 bg-[url('/thrift-shop.jpeg')] bg-cover bg-[center_top_-100px] flex flex-col justify-center items-center" />
 			<div className="w-full flex flex-col">
 				{featureGroups.map((group, index) => (
 					<div
 						key={index}
 						className={cn(
-							"w-full flex flex-row gap-16 py-16",
+							"w-full flex flex-row gap-16 py-36",
 							index % 2 === 0 && "flex-row-reverse items-center"
 						)}
 						id={group.id}
@@ -52,7 +52,6 @@ export default function page() {
 								<Image
 									src={group.image.src}
 									alt={group.image.alt}
-									className=""
 								/>
 							)}
 						</div>

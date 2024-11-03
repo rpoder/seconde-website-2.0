@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import LogoImage from "@/../public/logo_seconde_white.svg";
+import LogoImage from "@/../public/assets/svg/logo_seconde_white.svg";
 import { linkCategories } from "./footer.data";
 
 export type LinkItem = {
@@ -19,7 +19,7 @@ export type LinkCategory = {
 export default function Footer(): JSX.Element {
 	return (
 		<footer className="bg-primary text-white">
-			<div className="container mx-auto flex flex-col justify-between gap-8 px-4 py-16">
+			<div className="container mx-auto flex flex-col justify-between gap-24 px-16 py-16">
 				<div className="flex flex-row justify-between">
 					<Link href="/">
 						<Image
@@ -61,7 +61,7 @@ export default function Footer(): JSX.Element {
 						))}
 					</div>
 				</div>
-				<div className="border-t-[1px] border-t-muted-foreground text-muted-foreground text-sm flex flex-row justify-between pt-6">
+				<div className="border-t-[1px] border-t-secondary-foreground text-secondary text-sm flex flex-row justify-between pt-8">
 					<p>Copyright Seconde 2024 - Tous droits réservés</p>
 					<p>Fait avec ❤️ pour les dépôts-ventes</p>
 				</div>

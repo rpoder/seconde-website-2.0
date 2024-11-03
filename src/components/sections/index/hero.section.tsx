@@ -1,10 +1,10 @@
-import ScreenShot from "@/../public/DSC09114-resized.jpg";
+import ScreenShot from "@/../public/assets/images/DSC09114-resized.jpg";
 import Image from "next/image";
 
 export default function Hero() {
 	return (
-		<section className="mx-auto container flex flex-row items-center gap-32 relative">
-			<div className="space-y-6 w-2/5 z-10">
+		<section className="mx-auto container flex flex-row items-center gap-32">
+			<div className="space-y-6 w-2/5">
 				<h1>
 					Seconde, le logiciel en ligne des{" "}
 					<b

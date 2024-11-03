@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://seconde.app
+
+# Sitemaps
+Sitemap: https://seconde.app/sitemap.xml

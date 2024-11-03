@@ -1,12 +1,12 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
 import Image from "next/image";
-import LogoImage from "@/../public/logo_seconde_icon_black.svg";
+import LogoImage from "@/../public/assets/svg/logo_seconde_icon_black.svg";
 import { links } from "./header.data";
 
-export default function Nav(): JSX.Element {
+export default function Header(): JSX.Element {
 	return (
-		<header>
+		<header className="sticky top-0 z-10 bg-white border-b border-secondary">
 			<nav className="container mx-auto flex flex-row justify-between py-8">
 				<div className="flex flex-row gap-8 items-center">
 					<Link href="/">
