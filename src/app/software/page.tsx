@@ -7,7 +7,7 @@ export default function page() {
 		<div className="container mx-auto flex flex-col gap-20">
 			<div className="w-full space-y-4">
 				<h1>Que pouvez-vous faire avec Seconde ?</h1>
-				<div className="w-full h-96  bg-[url('/assets/images/shop-two-ladies.jpg')] bg-center bg-cover md:bg-[center_top_-100px] flex flex-col justify-center items-center" />
+				<div className="w-full h-96 bg-[url('/assets/images/shop-two-ladies.jpg')] bg-center bg-cover flex flex-col justify-center items-center" />
 			</div>
 			<div className="w-full flex flex-col">
 				{featureGroups.map((group, index) => (
