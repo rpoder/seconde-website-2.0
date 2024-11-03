@@ -56,10 +56,7 @@ export default function Pricing() {
 						Vous gérez une petite boutique et ce tarif représente un
 						véritable obstacle pour vous ?
 					</p>
-					<p>
-						Notre programme "Petite Boutique" est peut-être ce qu’il
-						vous faut ! Contactez-nous pour en discuter.
-					</p>
+					<p>Contactez-nous pour en discuter.</p>
 				</div>
 			</div>
 			<Badge variant="outline" className="md:text-base">
