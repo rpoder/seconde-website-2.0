@@ -18,15 +18,15 @@ export type FeatureBox = {
 const notifications = [
 	{
 		title: "Vous avez reçu votre contrat de dépôt",
-		className: "translate-x-8",
+		className: "md:translate-x-8",
 	},
 	{
 		title: "+120€ : Votre article a été vendu !",
-		className: "translate-x-56",
+		className: "md:translate-x-56",
 	},
 	{
 		title: "Il vous reste 7 jours pour récupérer vos invendus",
-		className: "-translate-x-8",
+		className: "md:-translate-x-8",
 	},
 ];
 

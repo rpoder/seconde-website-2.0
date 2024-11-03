@@ -13,13 +13,17 @@ export default function FeaturesBis() {
 			</h2>
 			<div className="flex flex-col gap-6">
 				{features.map((line, i) => (
-					<div key={i} className="w-full flex flex-row gap-6">
+					<div
+						key={i}
+						className="w-full flex flex-col md:flex-row gap-6"
+					>
 						{line.map((feature, j) => (
 							<div
 								key={j}
 								className={cn(
-									"bg-white border  rounded-lg text-center w-3/5 flex flex-col justify-between",
-									feature.size === "small" && "w-2/5"
+									"bg-white border rounded-lg text-center w-full md:w-3/5 flex flex-col justify-between",
+									feature.size === "small" &&
+										"w-full md:w-2/5"
 								)}
 							>
 								<div

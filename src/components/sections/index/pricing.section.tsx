@@ -15,7 +15,7 @@ export default function Pricing() {
 	return (
 		<section className="w-full bg-secondary py-16 flex flex-col justify-center items-center gap-8">
 			<div className="mx-auto container px-4 space-y-8 flex flex-col items-center">
-				<div className="flex flex-row gap-8 p-16 border bg-white">
+				<div className="flex flex-col md:flex-row gap-8 p-16 border bg-white">
 					<div className="flex flex-col justify-between">
 						<div className="flex flex-row items-end gap-2">
 							<h2 className="text-3xl">65 €</h2>
@@ -62,7 +62,7 @@ export default function Pricing() {
 					</p>
 				</div>
 			</div>
-			<Badge variant="outline" className="text-base">
+			<Badge variant="outline" className="md:text-base">
 				Seconde, fièrement engagé pour la seconde main
 			</Badge>
 		</section>

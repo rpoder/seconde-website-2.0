@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import React, { useEffect, useRef } from "react";
-import { UseFormReturn } from "react-hook-form";
+import { SubmitHandler, UseFormReturn } from "react-hook-form";
 import { validate } from "email-validator";
 import { Textarea } from "@/components/ui/textarea";
 
@@ -26,6 +26,8 @@ export default function InputsCarouselItem({
 	fields,
 	onClick,
 	isCurrent,
+	isLast,
+	handleSubmit,
 }: {
 	form: UseFormReturn<{
 		firstname: string;
@@ -37,6 +39,14 @@ export default function InputsCarouselItem({
 	fields: InputCarouselItemField[];
 	onClick: () => void;
 	isCurrent: boolean;
+	isLast: boolean;
+	handleSubmit: SubmitHandler<{
+		firstname: string;
+		lastname: string;
+		email: string;
+		organizationName: string;
+		message?: string | undefined;
+	}>;
 }) {
 	const inputRefs = useRef<(HTMLInputElement | HTMLTextAreaElement)[]>([]);
 	const canGoNext = () => {
@@ -51,6 +61,9 @@ export default function InputsCarouselItem({
 	const handleKeyDown = (event: React.KeyboardEvent, index: number) => {
 		if (event.key === "Enter") {
 			if (canGoNext()) {
+				if (isLast) {
+					handleSubmit(form.getValues());
+				}
 				onClick();
 			} else {
 				inputRefs.current[index + 1]?.focus();
@@ -121,19 +134,30 @@ export default function InputsCarouselItem({
 							)}
 						/>
 					))}
-					<Button
-						onClick={onClick}
-						disabled={!canGoNext()}
-						type="button"
-						className="mt-4 w-full"
-						onKeyDown={(event) => {
-							if (event.key === "Enter") {
-								onClick();
-							}
-						}}
-					>
-						Suivant
-					</Button>
+					{isLast ? (
+						<Button
+							onKeyDown={(event) => {
+								if (event.key === "Enter") {
+								}
+							}}
+						>
+							Terminer
+						</Button>
+					) : (
+						<Button
+							onClick={onClick}
+							disabled={!canGoNext()}
+							type="button"
+							className="mt-4 w-full"
+							onKeyDown={(event) => {
+								if (event.key === "Enter") {
+									handleSubmit(form.getValues());
+								}
+							}}
+						>
+							Suivant
+						</Button>
+					)}
 				</div>
 			</CarouselItem>
 		</>

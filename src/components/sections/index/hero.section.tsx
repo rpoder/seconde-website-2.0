@@ -3,12 +3,12 @@ import Image from "next/image";
 
 export default function Hero() {
 	return (
-		<section className="mx-auto container flex flex-row items-center gap-32">
-			<div className="space-y-6 w-2/5">
+		<section className="mx-auto container flex flex-col-reverse md:flex-row items-center gap-8 md:gap-24">
+			<div className="space-y-6 w-full md:w-2/5">
 				<h1>
 					Seconde, le logiciel en ligne des{" "}
 					<b
-						className="font-semibold tracking-tight"
+						className="font-semibold tracking-tight whitespace-nowrap"
 						style={{
 							fontFamily: "canada-type-gibson",
 							fontWeight: 550,
@@ -26,7 +26,7 @@ export default function Hero() {
 			<Image
 				src={ScreenShot}
 				alt="screenshot webapp"
-				className="w-3/5 rounded-md border-primary"
+				className="w-full md:w-3/5 rounded-md border-primary"
 			/>
 		</section>
 	);

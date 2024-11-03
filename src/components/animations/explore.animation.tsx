@@ -10,13 +10,13 @@ export default function ExploreAnimation() {
 	useEffect(() => {
 		const interval = setInterval(() => {
 			setCurrentWordIndex((prevIndex) => (prevIndex + 1) % data.length);
-		}, 2000); // Change word every 2 seconds
+		}, 1200);
 
 		return () => clearInterval(interval); // Cleanup on unmount
 	}, []);
 
 	return (
-		<div className="w-full h-96 bg-[url('/assets/images/thrift-shop.jpeg')] bg-cover bg-[center_top_-100px] flex flex-col justify-center items-center">
+		<div className="w-full h-96 bg-[url('/assets/images/thrift-shop.jpeg')] bg-cover bg-center md:bg-[center_top_-100px] flex flex-col justify-center items-center">
 			<div className="relative h-20 flex justify-center items-center">
 				<AnimatePresence>
 					{data.map(

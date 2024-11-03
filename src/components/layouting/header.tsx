@@ -7,8 +7,8 @@ import { links } from "./header.data";
 export default function Header(): JSX.Element {
 	return (
 		<header className="sticky top-0 z-10 bg-white border-b border-secondary">
-			<nav className="container mx-auto flex flex-row justify-between py-8">
-				<div className="flex flex-row gap-8 items-center">
+			<nav className="container mx-auto flex flex-col md:flex-row justify-between py-8">
+				<div className="flex flex-col md:flex-row gap-8 items-center">
 					<Link href="/">
 						<Image
 							src={LogoImage}
@@ -32,7 +32,7 @@ export default function Header(): JSX.Element {
 						))}
 					</ul>
 				</div>
-				<div className="space-x-2">
+				<div className="space-x-2 hidden md:flex">
 					<Button variant="secondary" type="button" asChild>
 						<Link href="/request/demo">Demander une démo</Link>
 					</Button>

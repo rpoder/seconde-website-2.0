@@ -20,7 +20,7 @@ export default function Footer(): JSX.Element {
 	return (
 		<footer className="bg-primary text-white">
 			<div className="container mx-auto flex flex-col justify-between gap-24 px-16 py-16">
-				<div className="flex flex-row justify-between">
+				<div className="flex flex-col md:flex-row justify-between">
 					<Link href="/">
 						<Image
 							src={LogoImage}
@@ -28,7 +28,7 @@ export default function Footer(): JSX.Element {
 							className="w-36 -translate-y-0.5"
 						/>
 					</Link>
-					<div className="flex flex-row gap-4">
+					<div className="flex flex-col md:flex-row gap-4">
 						{linkCategories.map((category) => (
 							<div
 								key={category.name}

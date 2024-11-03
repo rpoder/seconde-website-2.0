@@ -109,7 +109,13 @@ const config: Config = {
 			center: true,
 
 			// or have default horizontal padding
-			padding: "4rem",
+			padding: {
+				DEFAULT: "2rem", // Default padding
+				sm: "1rem", // Padding for small screens
+				md: "1rem", // Padding for medium screens
+				lg: "4rem", // Padding for large screens
+				xl: "5rem", // Padding for extra-large screens
+			},
 
 			// default breakpoints but with 40px removed
 			screens: {

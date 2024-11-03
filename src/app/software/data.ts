@@ -1,5 +1,7 @@
 import { StaticImageData } from "next/image";
-import Dashboard from "@/../public/assets/images/dashboard.png";
+import ArticlesImage from "@/../public/assets/images/software-articles.png";
+import CustomerImage from "@/../public/assets/images/software-customer.png";
+import DepositTypeImage from "@/../public/assets/images/software-depositType.png";
 
 export type Feature = {
 	title: string;
@@ -25,7 +27,7 @@ export const featureGroups: FeatureGroup[] = [
 			"Enregistrez des dépôts classiques, des dépôts en achat comptant, des dons, des achats fournisseurs, ou un peu de tout !",
 		],
 		image: {
-			src: Dashboard,
+			src: DepositTypeImage,
 			alt: "Interface de gestion des dépôts",
 		},
 		features: [
@@ -48,6 +50,10 @@ export const featureGroups: FeatureGroup[] = [
 	},
 	{
 		title: "Retrouvez votre stock",
+		image: {
+			src: ArticlesImage,
+			alt: "Interface de gestion des articles",
+		},
 		descriptions: [
 			"Travaillez avec une base de données pratique, complète et intuitive.",
 		],
@@ -63,6 +69,10 @@ export const featureGroups: FeatureGroup[] = [
 	},
 	{
 		title: "Suivez vos clients et déposants",
+		image: {
+			src: CustomerImage,
+			alt: "Interface de gestion des clients",
+		},
 		descriptions: [
 			"Simplifiez vos échanges avec vos clients et déposants.",
 		],

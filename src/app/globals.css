@@ -103,7 +103,7 @@ body {
 		@apply bg-background text-foreground;
 	}
 	h1 {
-		@apply text-5xl leading-tight;
+		@apply text-3xl md:text-5xl leading-tight;
 	}
 	h2 {
 		@apply text-xl;

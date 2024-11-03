@@ -7,19 +7,19 @@ export default function page() {
 		<div className="container mx-auto flex flex-col gap-20">
 			<div className="w-full space-y-4">
 				<h1>Que pouvez-vous faire avec Seconde ?</h1>
-				<div className="w-full h-96 bg-[url('/assets/images/thrift-shop.jpeg')] bg-cover bg-[center_top_-100px] flex flex-col justify-center items-center" />
+				<div className="w-full h-96  bg-[url('/assets/images/shop-two-ladies.jpg')] bg-center bg-cover md:bg-[center_top_-100px] flex flex-col justify-center items-center" />
 			</div>
 			<div className="w-full flex flex-col">
 				{featureGroups.map((group, index) => (
 					<div
 						key={index}
 						className={cn(
-							"w-full flex flex-row gap-16 py-36",
-							index % 2 === 0 && "flex-row-reverse items-center"
+							"w-full flex flex-col md:flex-row gap-16 py-36 items-center",
+							index % 2 === 0 && "md:flex-row-reverse "
 						)}
 						id={group.id}
 					>
-						<div className="w-2/5">
+						<div className="w-full md:w-2/5">
 							<h2 className="text-3xl">{group.title}</h2>
 							{group.descriptions.map((description, index) => (
 								<p key={index}>{description}</p>
@@ -46,15 +46,16 @@ export default function page() {
 								))}
 							</ul>
 						</div>
-						<div className="w-3/5 rounded-md border border-secondary shadow-lg overflow-hidden">
-							<div className="bg-slate-200 h-2 w-full" />
-							{group.image && (
+						{group.image && (
+							<div className="w-full md:w-3/5 rounded-md border border-secondary shadow-lg overflow-hidden">
+								<div className="bg-slate-200 h-2 w-full" />
+
 								<Image
 									src={group.image.src}
 									alt={group.image.alt}
 								/>
-							)}
-						</div>
+							</div>
+						)}
 					</div>
 				))}
 			</div>

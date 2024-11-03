@@ -9,10 +9,10 @@ export const linkCategories: LinkCategory[] = [
 	{
 		name: "Légal",
 		links: [
-			{
-				name: "Mentions légales",
-				href: "/legal/mentions",
-			},
+			// {
+			// 	name: "Mentions légales",
+			// 	href: "/legal/mentions",
+			// },
 			{
 				name: "Confidentialité",
 				href: "/legal/rgpd",

@@ -12,6 +12,7 @@ import { Form } from "@/components/ui/form";
 import InputCarouselItem, { InputCarouselItemField } from "./items/inputs.item";
 import { useEffect, useState } from "react";
 import ThanksItem from "./items/thanks.item";
+import axios from "axios";
 
 export const demoFormSchema = z.object({
 	firstname: z.string().min(2),
@@ -57,6 +58,8 @@ const slides: InputCarouselItemField[][] = [
 ];
 
 export default function ContactCarousel() {
+	const [success, setSuccess] = useState(false);
+	const [_, setError] = useState(false);
 	const [api, setApi] = useState<CarouselApi>();
 	const [current, setCurrent] = useState(0);
 	const [count, setCount] = useState(0);
@@ -73,7 +76,28 @@ export default function ContactCarousel() {
 	});
 
 	function onSubmit(values: z.infer<typeof demoFormSchema>) {
-		console.log(values);
+		setError(false);
+		setSuccess(false);
+		axios
+			.post(
+				"https://prod.api.seconde.app/v1/contact-us?type=contact",
+				{
+					firstname: values.firstname,
+					lastname: values.lastname,
+					email: values.email,
+					organizationName: values.organizationName,
+					message: values.message,
+				},
+				{ withCredentials: true }
+			)
+			.then(function () {
+				setSuccess(true);
+				api?.scrollNext();
+			})
+			.catch(function () {
+				setError(true);
+				api?.scrollNext();
+			});
 	}
 
 	useEffect(() => {
@@ -127,9 +151,11 @@ export default function ContactCarousel() {
 								fields={fieldValues}
 								onClick={() => api?.scrollNext()}
 								isCurrent={key + 1 === current}
+								isLast={key + 1 === count - 1}
+								handleSubmit={onSubmit}
 							/>
 						))}
-						<ThanksItem />
+						<ThanksItem isSuccess={success} />
 					</CarouselContent>
 				</Carousel>
 			</form>
