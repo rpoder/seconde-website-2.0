@@ -1,8 +1,8 @@
 import type { LegalData } from "../type.ts";
 
-export const generalTermsOfSaleData: LegalData = {
+const generalTermsOfSaleData: LegalData = {
 	title: "CGV",
-	updatedAt: "Dernière mise à jour : 07/11/2024",
+	updatedAt: new Date("2024-11-07"),
 	preamble: {
 		title: "Préambule",
 		content: [
@@ -401,3 +401,5 @@ export const generalTermsOfSaleData: LegalData = {
 		},
 	],
 };
+
+export default generalTermsOfSaleData;

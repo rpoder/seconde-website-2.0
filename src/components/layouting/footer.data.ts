@@ -9,22 +9,22 @@ export const linkCategories: LinkCategory[] = [
 	{
 		name: "Légal",
 		links: [
-			// {
-			// 	name: "Mentions légales",
-			// 	href: "/legal/mentions",
-			// },
+			{
+				name: "Mentions légales",
+				href: "/legal/mentions",
+			},
 			{
 				name: "Confidentialité",
 				href: "/legal/rgpd",
 			},
-			// {
-			// 	name: "CGU",
-			// 	href: "/legal/cgu",
-			// },
-			// {
-			// 	name: "CGV",
-			// 	href: "/legal/cgv",
-			// },
+			{
+				name: "CGU",
+				href: "/legal/cgu",
+			},
+			{
+				name: "CGV",
+				href: "/legal/cgv",
+			},
 			// {
 			// 	name: "Conformité fiscale",
 			// 	href: "/legal/tax-compliance",

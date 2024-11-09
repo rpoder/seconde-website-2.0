@@ -1,8 +1,8 @@
-import type { LegalData } from "../type.ts"
+import type { LegalData } from "../type.ts";
 
 const privacyPolicyData: LegalData = {
 	title: "Politique de Confidentialité",
-	updatedAt: "Dernière mise à jour : 07/11/2024",
+	updatedAt: new Date("2024-11-08"),
 	sections: [
 		{
 			title: "Objet et Définitions",
@@ -451,4 +451,4 @@ const privacyPolicyData: LegalData = {
 	],
 };
 
-export { privacyPolicyData };
+export default privacyPolicyData;

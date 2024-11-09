@@ -19,7 +19,7 @@ export type LinkCategory = {
 export default function Footer(): JSX.Element {
 	return (
 		<footer className="bg-primary text-white">
-			<div className="container mx-auto flex flex-col justify-between md:gap-24 gap-8 px-16 py-16">
+			<div className="container mx-auto flex flex-col justify-between md:gap-24 gap-8 md:px-16 py-16">
 				<div className="flex flex-col md:flex-row justify-between gap-10">
 					<Link href="/">
 						<Image

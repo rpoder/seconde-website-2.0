@@ -1,8 +1,8 @@
 import type { LegalData } from "../type.ts";
 
-export const legalNoticeData: LegalData = {
+const legalNoticeData: LegalData = {
 	title: "Mentions légales",
-	updatedAt: "Dernière mise à jour : 07/11/2024",
+	updatedAt: new Date("2024-11-07"),
 	preamble: {
 		title: "Informations sur le site",
 		content: [
@@ -71,3 +71,5 @@ export const legalNoticeData: LegalData = {
 		},
 	],
 };
+
+export default legalNoticeData;

@@ -6,13 +6,17 @@ import {
 	AccordionTrigger,
 } from "@/components/ui/accordion";
 import { format } from "date-fns";
+import { fr } from "date-fns/locale";
 
 export default function page() {
 	return (
 		<div className="container mx-auto flex flex-col w-full gap-16">
 			<div className="space-y-2">
 				<h1>Roadmap</h1>
-				<p>Actualisée le {format(updatedAt, "dd LLLL yyyy")}</p>
+				<p>
+					Actualisée le{" "}
+					{format(updatedAt, "dd LLLL yyyy", { locale: fr })}
+				</p>
 			</div>
 			<div className="flex flex-row gap-12">
 				{collumns.map((column, index) => (

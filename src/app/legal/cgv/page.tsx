@@ -1,50 +1,30 @@
-import { generalTermsOfSaleData } from "./data";
-import {
-	Table,
-	TableBody,
-	TableCell,
-	TableHead,
-	TableHeader,
-	TableRow,
-} from "@/components/ui/table";
+import LegalTable from "@/components/tables/legal.table";
+import data from "./data";
+import { format } from "date-fns";
+import { fr } from "date-fns/locale";
 
 export default function Page() {
 	return (
-		<div className="container mx-auto px-48 flex flex-col gap-12 text-justify">
-			<div className="w-full">
-				<h1 className="text-3xl font-bold">{generalTermsOfSaleData.title}</h1>
+		<div className="container mx-auto md:px-48 flex flex-col gap-12 text-justify">
+			<div className="w-full space-y-2">
+				<h1 className="text-3xl font-bold text-left">{data.title}</h1>
+				<p>
+					Mis à jour le{" "}
+					{format(data.updatedAt, "dd LLLL yyyy", {
+						locale: fr,
+					})}
+				</p>
 			</div>
-			<div className="w-full flex flex-col gap-8">
-				{generalTermsOfSaleData.updatedAt}
-				<h2 className="text-2xl font-semibold">
-					{generalTermsOfSaleData.preamble?.title}
-				</h2>
-				{generalTermsOfSaleData.preamble &&
-					generalTermsOfSaleData.preamble.content.map(
-						(contentItem, textsIndex) => (
-							<div
-								key={textsIndex}
-								className="flex flex-col gap-4"
-							>
-								{contentItem.texts.map((text, textIndex) => (
-									<div key={textIndex}>
-										{text.map((text, textIndex) => (
-											<p key={textIndex}>{text}</p>
-										))}
-									</div>
-								))}
-							</div>
-						)
-					)}
-				{generalTermsOfSaleData.sections.map((section, index) => (
-					<div key={index} className="flex flex-col gap-8">
-						<h2 className="text-2xl font-semibold">
+			<div className="w-full flex flex-col gap-16">
+				{data.sections.map((section, index) => (
+					<div key={index} className="flex flex-col gap-4">
+						<h2 className="text-2xl font-semibold text-left">
 							{index + 1}. {section.title}
 						</h2>
 						{section.content?.map((contentItem, contentIndex) => (
 							<div
 								key={contentIndex}
-								className="flex flex-col gap-4"
+								className="flex flex-col gap-6"
 							>
 								{contentItem.texts.map((texts, textsIndex) => (
 									<div key={textsIndex}>
@@ -53,6 +33,9 @@ export default function Page() {
 										))}
 									</div>
 								))}
+								{contentItem.table && (
+									<LegalTable table={contentItem.table} />
+								)}
 							</div>
 						))}
 						{section.subSections &&
@@ -60,9 +43,9 @@ export default function Page() {
 								(subSection, subSectionIndex) => (
 									<div
 										key={subSectionIndex}
-										className="flex flex-col gap-4 ml-16"
+										className="flex flex-col gap-4 md:ml-16"
 									>
-										<h3 className="text-xl font-semibold">
+										<h3 className="text-xl font-semibold text-left">
 											{index + 1}.{subSectionIndex + 1}.{" "}
 											{subSection.title}
 										</h3>
@@ -73,7 +56,7 @@ export default function Page() {
 											) => (
 												<div
 													key={subContentIndex}
-													className="flex flex-col gap-4"
+													className="flex flex-col gap-6"
 												>
 													{subContentItem.texts.map(
 														(texts, textsIndex) => (
@@ -100,59 +83,11 @@ export default function Page() {
 														)
 													)}
 													{subContentItem.table && (
-														<Table>
-															<TableHeader>
-																<TableRow>
-																	{subContentItem.table.headers.map(
-																		(
-																			header,
-																			headerIndex
-																		) => (
-																			<TableHead
-																				key={
-																					headerIndex
-																				}
-																			>
-																				{
-																					header
-																				}
-																			</TableHead>
-																		)
-																	)}
-																</TableRow>
-															</TableHeader>
-															<TableBody>
-																{subContentItem.table.rows.map(
-																	(
-																		row,
-																		rowIndex
-																	) => (
-																		<TableRow
-																			key={
-																				rowIndex
-																			}
-																		>
-																			{row.map(
-																				(
-																					cell,
-																					cellIndex
-																				) => (
-																					<TableCell
-																						key={
-																							cellIndex
-																						}
-																					>
-																						{
-																							cell
-																						}
-																					</TableCell>
-																				)
-																			)}
-																		</TableRow>
-																	)
-																)}
-															</TableBody>
-														</Table>
+														<LegalTable
+															table={
+																subContentItem.table
+															}
+														/>
 													)}
 												</div>
 											)

@@ -1,9 +1,11 @@
 export type SectionContent = {
 	texts: string[][];
-	table?: {
-		headers: string[];
-		rows: string[][];
-	};
+	table?: Table;
+};
+
+export type Table = {
+	headers: string[];
+	rows: string[][];
 };
 
 type SubSection = {
@@ -19,7 +21,7 @@ export type Section = {
 
 export type LegalData = {
 	title: string;
-	updatedAt?: string;
+	updatedAt: Date;
 	preamble?: {
 		title: string;
 		content: SectionContent[];
