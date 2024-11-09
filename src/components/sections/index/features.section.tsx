@@ -35,15 +35,19 @@ export default function Features() {
 					boutiques qui vous ressemblent
 				</h3>
 			</div>
-			<div className="flex flex-row flex-wrap gap-10 justify-center max-w-[1200px]">
-				{features.slice(0, 4).map((feature, index) => (
-					<FeatureBox key={index} {...feature} />
-				))}
-			</div>
-			<div className="flex flex-row flex-wrap gap-10 justify-center max-w-[1200px]">
-				{features.slice(4, features.length).map((feature, index) => (
-					<FeatureBox key={index} {...feature} />
-				))}
+			<div className="flex flex-col gap-8">
+				<div className="flex flex-row flex-wrap gap-10 justify-center max-w-[1200px]">
+					{features.slice(0, 4).map((feature, index) => (
+						<FeatureBox key={index} {...feature} />
+					))}
+				</div>
+				<div className="flex flex-row flex-wrap gap-10 justify-center max-w-[1200px]">
+					{features
+						.slice(4, features.length)
+						.map((feature, index) => (
+							<FeatureBox key={index} {...feature} />
+						))}
+				</div>
 			</div>
 		</section>
 	);

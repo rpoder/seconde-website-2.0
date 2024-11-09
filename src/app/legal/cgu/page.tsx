@@ -1,4 +1,4 @@
-import { privacyPolicyData } from "./data";
+import { generalTermsOfUseData } from "./data";
 import {
 	Table,
 	TableBody,
@@ -13,85 +13,51 @@ export default function Page() {
 		<div className="container mx-auto px-48 flex flex-col gap-12 text-justify">
 			<div className="w-full">
 				<h1 className="text-3xl font-bold">
-					{privacyPolicyData.title}
+					{generalTermsOfUseData.title}
 				</h1>
 			</div>
-			<div className="w-full flex flex-col gap-16">
-				{privacyPolicyData.sections.map((section, index) => (
+			<div className="w-full flex flex-col gap-8">
+				{generalTermsOfUseData.updatedAt}
+				<h2 className="text-2xl font-semibold">
+					{generalTermsOfUseData.preamble?.title}
+				</h2>
+				
+				{generalTermsOfUseData.preamble &&
+					generalTermsOfUseData.preamble.content.map(
+						(contentItem, textsIndex) => (
+							<div
+								key={textsIndex}
+								className="flex flex-col gap-4"
+							>
+								{contentItem.texts.map((text, textIndex) => (
+									<div key={textIndex}>
+										{text.map((text, textIndex) => (
+											<p key={textIndex}>{text}</p>
+										))}
+									</div>
+								))}
+							</div>
+						)
+					)}
+				{generalTermsOfUseData.sections.map((section, index) => (
 					<div key={index} className="flex flex-col gap-8">
-						{privacyPolicyData.updatedAt}
 						<h2 className="text-2xl font-semibold">
 							{index + 1}. {section.title}
 						</h2>
-
-						{section.content?.map(
-							(contentItem, contentIndex) => (
-								<div
-									key={contentIndex}
-									className="flex flex-col gap-4"
-								>
-									{contentItem.texts.map(
-										(texts, textsIndex) => (
-											<div key={textsIndex}>
-												{texts.map(
-													(text, textIndex) => (
-														<p key={textIndex}>
-															{text}
-														</p>
-													)
-												)}
-											</div>
-										)
-									)}
-									{contentItem.table && (
-										<Table>
-											<TableHeader>
-												<TableRow>
-													{contentItem.table.headers.map(
-														(
-															header,
-															headerIndex
-														) => (
-															<TableHead
-																key={
-																	headerIndex
-																}
-															>
-																{header}
-															</TableHead>
-														)
-													)}
-												</TableRow>
-											</TableHeader>
-											<TableBody>
-												{contentItem.table.rows.map(
-													(row, rowIndex) => (
-														<TableRow
-															key={rowIndex}
-														>
-															{row.map(
-																(
-																	cell,
-																	cellIndex
-																) => (
-																	<TableCell
-																		key={
-																			cellIndex
-																		}
-																	>
-																		{cell}
-																	</TableCell>
-																)
-															)}
-														</TableRow>
-													)
-												)}
-											</TableBody>
-										</Table>
-									)}
-								</div>
-							)
-						)}
+						{section.content?.map((contentItem, contentIndex) => (
+							<div
+								key={contentIndex}
+								className="flex flex-col gap-4"
+							>
+								{contentItem.texts.map((texts, textsIndex) => (
+									<div key={textsIndex}>
+										{texts.map((text, textIndex) => (
+											<p key={textIndex}>{text}</p>
+										))}
+									</div>
+								))}
+							</div>
+						))}
 						{section.subSections &&
 							section.subSections.map(
 								(subSection, subSectionIndex) => (

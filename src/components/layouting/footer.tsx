@@ -19,8 +19,8 @@ export type LinkCategory = {
 export default function Footer(): JSX.Element {
 	return (
 		<footer className="bg-primary text-white">
-			<div className="container mx-auto flex flex-col justify-between gap-24 px-16 py-16">
-				<div className="flex flex-col md:flex-row justify-between">
+			<div className="container mx-auto flex flex-col justify-between md:gap-24 gap-8 px-16 py-16">
+				<div className="flex flex-col md:flex-row justify-between gap-10">
 					<Link href="/">
 						<Image
 							src={LogoImage}
@@ -28,14 +28,14 @@ export default function Footer(): JSX.Element {
 							className="w-36 -translate-y-0.5"
 						/>
 					</Link>
-					<div className="flex flex-col md:flex-row gap-4">
+					<div className="flex flex-col md:flex-row gap-6">
 						{linkCategories.map((category) => (
 							<div
 								key={category.name}
-								className="space-y-4 min-w-36"
+								className="space-y-1 min-w-32"
 							>
 								<p className="font-bold">{category.name}</p>
-								<ul className="flex flex-col gap-2">
+								<ul className="flex flex-col">
 									{category.links.map((link) => (
 										<li key={link.href}>
 											<Link
@@ -61,7 +61,7 @@ export default function Footer(): JSX.Element {
 						))}
 					</div>
 				</div>
-				<div className="border-t-[1px] border-t-secondary-foreground text-secondary text-sm flex flex-row justify-between pt-8">
+				<div className="border-t-[1px] border-t-secondary-foreground text-secondary text-sm flex md:flex-row flex-col gap-4 justify-between pt-8">
 					<p>Copyright Seconde 2024 - Tous droits réservés</p>
 					<p>Fait avec ❤️ pour les dépôts-ventes</p>
 				</div>

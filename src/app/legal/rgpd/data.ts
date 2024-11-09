@@ -1,34 +1,8 @@
-type SectionContent = {
-	texts: string[][];
-	table?: {
-		headers: string[];
-		rows: string[][];
-	};
-};
-
-type SubSection = {
-	title: string;
-	content: SectionContent[];
-};
-
-export type Section = {
-	title: string;
-	content: SectionContent[];
-	subSections?: SubSection[];
-};
-
-export type LegalData = {
-	title: string;
-	sectionsSumary: {
-		title: string;
-		subTitles: string[];
-	}[];
-	sections: Section[];
-};
+import type { LegalData } from "../type.ts"
 
 const privacyPolicyData: LegalData = {
 	title: "Politique de Confidentialité",
-	sectionsSumary: [],
+	updatedAt: "Dernière mise à jour : 07/11/2024",
 	sections: [
 		{
 			title: "Objet et Définitions",
@@ -47,6 +21,9 @@ const privacyPolicyData: LegalData = {
 						[
 							"Si vous êtes client ou déposant d’une boutique qui utilise Seconde, vous pouvez vous référez à la section 3 « Données que nous collectons sur vos clients ». Vous pouvez faire une demande d’accès, de suppression ou de rectification de vos données personnelles en nous contactant via contact@seconde.app, ou auprès de votre boutique.",
 						],
+						//		[
+						//			"Seconde, nous, notre : désigne la Société à responsabilité limitée, au capital de ** euros, ayant son siège social sis **, immatriculée au Registre du Commerce et des Sociétés de **, sous le numéro **.",
+						//		],
 						[
 							"Vous : désigne l’entreprise ou l’organisation utilisant nos Services.",
 						],
