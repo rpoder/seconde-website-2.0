@@ -39,7 +39,7 @@ export default function page() {
 										<AccordionTrigger>
 											{item.title}
 										</AccordionTrigger>
-										<AccordionContent>
+										<AccordionContent className="flex flex-col gap-2">
 											{item.description.map(
 												(description, index) => (
 													<p key={index}>
