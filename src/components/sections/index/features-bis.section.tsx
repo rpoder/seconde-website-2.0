@@ -1,8 +1,6 @@
 import { cn } from "@/lib/utils";
 import { features } from "./features-bis.data";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 export default function FeaturesBis() {
 	return (

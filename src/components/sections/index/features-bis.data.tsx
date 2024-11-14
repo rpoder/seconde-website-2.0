@@ -1,5 +1,4 @@
 import { StaticImageData } from "next/image";
-import { cn } from "@/lib/utils";
 import SetEmailParametersForm from "@/components/forms/set-email-parameters-form";
 
 export type FeatureBox = {
@@ -15,39 +14,39 @@ export type FeatureBox = {
 	noShadow?: boolean;
 };
 
-const notifications = [
-	{
-		title: "Vous avez reçu votre contrat de dépôt",
-		className: "md:translate-x-8",
-	},
-	{
-		title: "+120€ : Votre article a été vendu !",
-		className: "md:translate-x-56",
-	},
-	{
-		title: "Il vous reste 7 jours pour récupérer vos invendus",
-		className: "md:-translate-x-16",
-	},
-];
+// const notifications = [
+// 	{
+// 		title: "Vous avez reçu votre contrat de dépôt",
+// 		className: "md:translate-x-8",
+// 	},
+// 	{
+// 		title: "+120€ : Votre article a été vendu !",
+// 		className: "md:translate-x-56",
+// 	},
+// 	{
+// 		title: "Il vous reste 7 jours pour récupérer vos invendus",
+// 		className: "md:-translate-x-16",
+// 	},
+// ];
 
-function NotificationBox({
-	title,
-	className,
-}: {
-	title: string;
-	className?: string;
-}) {
-	return (
-		<div
-			className={cn(
-				"flex flex-row gap-4 items-center border border-secondary rounded-lg backdrop-blur p-4 px-4 bg-blue-100/50 border-blue-200 ",
-				className
-			)}
-		>
-			<p className="text-sm text-blue-400 font-bold">{title}</p>
-		</div>
-	);
-}
+// function NotificationBox({
+// 	title,
+// 	className,
+// }: {
+// 	title: string;
+// 	className?: string;
+// }) {
+// 	return (
+// 		<div
+// 			className={cn(
+// 				"flex flex-row gap-4 items-center border border-secondary rounded-lg backdrop-blur p-4 px-4 bg-blue-100/50 border-blue-200 ",
+// 				className
+// 			)}
+// 		>
+// 			<p className="text-sm text-blue-400 font-bold">{title}</p>
+// 		</div>
+// 	);
+// }
 
 function NotificationComponent() {
 	return (
