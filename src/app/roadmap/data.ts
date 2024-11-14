@@ -131,7 +131,7 @@ const columns: RoadmapColumn[] = [
 				],
 			},
 			{
-				title: "Ajoutez une politique de prix dégressif",
+				title: "Ajoutez une politique de prix dégressifs",
 				description: [
 					"Programmez la baisse du prix de vente de vos articles, à intervalles réguliers. Par exemple, vous pouvez définir un prix de vente initial et un prix de vente après 30 jours, 60 jours, etc.",
 				],

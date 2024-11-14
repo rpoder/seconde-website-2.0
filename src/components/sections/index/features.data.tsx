@@ -17,7 +17,7 @@ export const features: Feature[] = [
 	},
 	{ title: "Logiciel conforme loi des finances" },
 	{
-		title: "Service client 24/7",
+		title: "Accompagnement Service client",
 	},
 	{
 		title: "Gestion multi-boutiques",

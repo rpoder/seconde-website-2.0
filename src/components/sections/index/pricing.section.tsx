@@ -43,7 +43,7 @@ export default function Pricing() {
 							))}
 							<li className="mt-4">
 								<Button asChild>
-									<Link href="/software">
+									<Link href="#software">
 										Voir toutes les fonctionalités
 									</Link>
 								</Button>

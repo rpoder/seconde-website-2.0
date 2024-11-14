@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image";
-import SaleImage from "@/../public/assets/images/sale.jpg";
 import { cn } from "@/lib/utils";
+import SetEmailParametersForm from "@/components/forms/set-email-parameters-form";
 
 export type FeatureBox = {
 	title: string;
@@ -26,7 +26,7 @@ const notifications = [
 	},
 	{
 		title: "Il vous reste 7 jours pour récupérer vos invendus",
-		className: "md:-translate-x-8",
+		className: "md:-translate-x-16",
 	},
 ];
 
@@ -40,25 +40,31 @@ function NotificationBox({
 	return (
 		<div
 			className={cn(
-				"flex flex-row gap-4 items-center border border-secondary rounded-lg backdrop-blur-sm p-4 px-4 bg-blue-50/50 border-blue-200 ",
+				"flex flex-row gap-4 items-center border border-secondary rounded-lg backdrop-blur p-4 px-4 bg-blue-100/50 border-blue-200 ",
 				className
 			)}
 		>
-			<p className="text-sm text-blue-400">{title}</p>
+			<p className="text-sm text-blue-400 font-bold">{title}</p>
 		</div>
 	);
 }
 
 function NotificationComponent() {
 	return (
-		<div className="flex flex-col gap-4 items-start pt-16">
-			{notifications.map((notification, i) => (
-				<NotificationBox
-					key={i}
-					title={notification.title}
-					className={notification.className}
-				/>
-			))}
+		<div className="flex flex-col gap-4 items-start justify-center h-full text-left p-4">
+			<h4 className="font-semibold">Selectionnez vos préférences</h4>
+			<div className="flex flex-row items-center justify-between rounded-lg gap-2">
+				<SetEmailParametersForm />
+			</div>
+			{/* <div className="absolute top-0 left-0 flex flex-col gap-16">
+				{notifications.map((notification, i) => (
+					<NotificationBox
+						key={i}
+						title={notification.title}
+						className={notification.className}
+					/>
+				))}
+			</div> */}
 		</div>
 	);
 }
@@ -66,14 +72,11 @@ function NotificationComponent() {
 export type Feature = {
 	title: string;
 	description: string;
-	buttonText: string;
-	buttonHref: string;
-	size: "small" | "large";
-	textPosition: "top" | "bottom";
 	image?: StaticImageData;
 	component?: JSX.Element;
 	videoSrc?: string;
 	noShadow?: boolean;
+	hasBorder?: boolean;
 };
 
 export const features: Feature[][] = [
@@ -82,21 +85,8 @@ export const features: Feature[][] = [
 			title: "Créez un dépôt en quelques clics",
 			description:
 				"Deux parcours de dépôt au choix pour vous accompagner en toute fluidité selon vos habitudes.",
-			size: "large",
-			textPosition: "top",
-			buttonText: "En savoir plus",
-			buttonHref: "/software#deposit",
 			videoSrc: "/assets/videos/SEQ-deposit-flow.mp4",
-		},
-		{
-			title: "Notifiez vos déposants automatiquement",
-			description:
-				"Vos deposants seront ravis de suivre leurs depots.. et n’oublieront plus de venir recuperer leurs invendus !",
-			size: "small",
-			textPosition: "bottom",
-			buttonText: "En savoir plus",
-			buttonHref: "/software#alerts",
-			component: NotificationComponent(),
+			hasBorder: true,
 		},
 	],
 	[
@@ -104,22 +94,14 @@ export const features: Feature[][] = [
 			title: "Gérez toutes vos boutiques en un seul outil",
 			description:
 				"Naviguez entre vos boutiques et reconnaissez vos clients tout en dissociant vos stocks.",
-			size: "small",
-			textPosition: "bottom",
-			buttonText: "Essayer gratuitement",
-			buttonHref: "/request/demo",
 			videoSrc: "/assets/videos/SEQ-select-org.mp4",
 			noShadow: true,
 		},
 		{
-			title: "Travaillez avec un logiciel adapté aux dépôts-ventes",
+			title: "Notifiez vos déposants automatiquement",
 			description:
-				"Bénéficiez d’une logique de caisse pensée spécifiquement pour les depots-ventes.",
-			size: "large",
-			textPosition: "top",
-			buttonText: "En savoir plus",
-			buttonHref: "/software#accounting",
-			image: SaleImage,
+				"Vos deposants seront ravis de suivre leurs depots.. et n’oublieront plus de venir recuperer leurs invendus !",
+			component: NotificationComponent(),
 		},
 	],
 ];

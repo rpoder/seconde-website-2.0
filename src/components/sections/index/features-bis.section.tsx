@@ -21,21 +21,12 @@ export default function FeaturesBis() {
 							<div
 								key={j}
 								className={cn(
-									"bg-white border rounded-lg text-center w-full md:w-3/5 flex flex-col justify-between",
-									feature.size === "small" &&
-										"w-full md:w-2/5"
+									"bg-white border text-center w-full flex flex-col justify-between"
 								)}
 							>
 								<div
 									className={cn(
-										"flex flex-col gap-2 items-center p-14",
-										feature.textPosition === "bottom" &&
-											"pt-0",
-										feature.textPosition === "top" &&
-											"pb-0",
-										feature.textPosition === "top"
-											? "order-1"
-											: "order-2"
+										"flex flex-col gap-2 items-center p-8 md:p-14"
 									)}
 								>
 									<h3 className="text-xl font-semibold text-rose-400">
@@ -46,14 +37,7 @@ export default function FeaturesBis() {
 									</p>
 								</div>
 
-								<div
-									className={cn(
-										!feature.component && "p-12",
-										feature.textPosition === "top"
-											? "order-2"
-											: "order-1"
-									)}
-								>
+								<div className="flex flex-col p-4 md:p-12 pt-0 h-full">
 									{feature.image && (
 										<Image
 											src={feature.image}
@@ -66,31 +50,34 @@ export default function FeaturesBis() {
 										/>
 									)}
 									{feature.videoSrc && (
-										<video
-											src={feature.videoSrc}
-											autoPlay
-											muted
-											loop
-											playsInline
+										<div
 											className={cn(
-												"w-full rounded-lg shadow-lg",
-												feature.noShadow &&
-													"shadow-none"
+												"overflow-hidden rounded md:rounded-lg",
+												feature.hasBorder &&
+													"md:border-2 border-gray-200"
 											)}
-										/>
+										>
+											<video
+												src={feature.videoSrc}
+												autoPlay
+												muted
+												loop
+												playsInline
+												className={cn(
+													"w-full scale-[100.4%]",
+													feature.noShadow &&
+														"shadow-none"
+												)}
+											/>
+										</div>
 									)}
-									{feature.component && feature.component}
+
+									{feature.component && (
+										<div className="flex items-center justify-center h-full bg-stone-50 rounded-lg">
+											{feature.component}
+										</div>
+									)}
 								</div>
-								<Button
-									asChild
-									variant="secondary"
-									className="rounded-none order-3 rounded-b-lg"
-									size="lg"
-								>
-									<Link href={feature.buttonHref}>
-										{feature.buttonText}
-									</Link>
-								</Button>
 							</div>
 						))}
 					</div>

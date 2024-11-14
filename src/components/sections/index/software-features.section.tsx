@@ -1,20 +1,22 @@
 import { cn } from "@/lib/utils";
-import { featureGroups } from "./data";
+import { featureGroups } from "./software-features.data";
 import Image from "next/image";
 
-export default function page() {
+export default function SoftwareFeatures() {
 	return (
-		<div className="container mx-auto flex flex-col gap-20">
+		<div className="container mx-auto flex flex-col gap-8" id="software">
 			<div className="w-full space-y-4">
-				<h1>Que pouvez-vous faire avec Seconde ?</h1>
-				<div className="w-full h-96 bg-[url('/assets/images/shop-two-ladies.jpg')] bg-center bg-cover flex flex-col justify-center items-center" />
+				<h2 className="text-center text-2xl mb-16">
+					Que pouvez-vous faire avec Seconde ?
+				</h2>
+				<div className="w-full h-[450px] bg-[url('/assets/images/two-women-computer.jpg')] bg-center bg-cover flex flex-col justify-center items-center" />
 			</div>
 			<div className="w-full flex flex-col">
 				{featureGroups.map((group, index) => (
 					<div
 						key={index}
 						className={cn(
-							"w-full flex flex-col md:flex-row gap-16 py-36 items-center",
+							"w-full flex flex-col md:flex-row gap-8 md:gap-24 py-8 md:py-16 items-center",
 							index % 2 === 0 && "md:flex-row-reverse "
 						)}
 						id={group.id}
@@ -47,7 +49,7 @@ export default function page() {
 							</ul>
 						</div>
 						{group.image && (
-							<div className="w-full md:w-3/5 rounded-md border border-secondary shadow-lg overflow-hidden">
+							<div className="w-full md:w-3/5 rounded-md border border-secondary shadow-lg overflow-hidden hidden md:block">
 								<div className="bg-slate-200 h-2 w-full" />
 
 								<Image

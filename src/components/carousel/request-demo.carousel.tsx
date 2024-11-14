@@ -106,7 +106,7 @@ export default function RequestDemoCarousel() {
 		<Form {...form}>
 			<form
 				onSubmit={form.handleSubmit(onSubmit)}
-				className="space-y-2 border rounded-md bg-secondary py-8"
+				className="space-y-2 bg-secondary py-8"
 				onKeyDown={(event) => {
 					if (event.key === "Enter") {
 						event.preventDefault();

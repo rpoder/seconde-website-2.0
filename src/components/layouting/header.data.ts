@@ -6,8 +6,8 @@ export const links: LinkItem[] = [
 		href: "/",
 	},
 	{
-		name: "Logiciel",
-		href: "/software",
+		name: "Roadmap",
+		href: "/roadmap",
 	},
 	// {
 	// 	name: "Tarifs",

@@ -14,7 +14,7 @@ export default function Explore() {
 					Tout ce dont votre dépôt-vente a besoin, en un seul logiciel
 				</h2>
 				<Button asChild type="button" size="lg" className="px-8 ">
-					<Link href="/software">Explorer le logiciel</Link>
+					<Link href="#software">Explorer le logiciel</Link>
 				</Button>
 			</div>
 		</section>
