@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-module.exports = {
-	async redirects() {
+const nextConfig = {
+	redirects: async () => {
 		return [
 			{
 				source: "/software",
