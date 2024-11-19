@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
 import Image from "next/image";
-import LogoImage from "@/../public/assets/svg/logo_seconde_icon_black.svg";
+import LogoImage from "@/../public/assets/svg/logo_seconde_icon_orange.svg";
 import { links } from "./header.data";
 
 export default function Header(): JSX.Element {

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import LogoImage from "@/../public/assets/svg/logo_seconde_white.svg";
+import LogoImage from "@/../public/assets/svg/logo_seconde_beige.svg";
 import { linkCategories } from "./footer.data";
 
 export type LinkItem = {
