@@ -3,7 +3,7 @@ export type RoadmapItem = {
 	description: string[];
 };
 
-export const updatedAt = new Date("2024-09-10");
+export const updatedAt = new Date("2024-11-30");
 
 export type RoadmapColumn = {
 	title: string;
@@ -66,21 +66,27 @@ const columns: RoadmapColumn[] = [
 					"Retrouvez toutes vos anciennes données dans votre logiciel.",
 				],
 			},
-		],
-	},
-	{
-		title: "Dans les 6 prochains mois",
-		items: [
-			{
-				title: "Nouvelle page d'articles",
-				description: [
-					"Découvrez la nouvelle page de vos articles, encore plus pratique ! Parcourez-la grâce aux filtres (articles par catégorie, marque, taille ou encore date de fin de dépôt).",
-				],
-			},
 			{
 				title: "Carte cadeau",
 				description: [
 					"Vos clients peuvent acheter une carte cadeau, celle-ci sera automatiquement créditée sur présentation lors d’un achat.",
+				],
+			},
+		],
+	},
+	{
+		title: "Dans les 3 prochains mois",
+		items: [
+			{
+				title: "Paiement en plusieurs fois",
+				description: [
+					"Offrez à votre client la possibilité de payer en plusieurs fois, et retouvez facilement vos reglements en attente.",
+				],
+			},
+			{
+				title: "Nouvelle page d'articles",
+				description: [
+					"Découvrez la nouvelle page de vos articles, encore plus pratique ! Parcourez-la grâce aux filtres (articles par catégorie, marque, taille ou encore date de fin de dépôt).",
 				],
 			},
 			{
@@ -96,9 +102,15 @@ const columns: RoadmapColumn[] = [
 				],
 			},
 			{
-				title: "Gérez les droits utilisateurs de votre logiciel",
+				title: "Campagnes de soldes",
 				description: [
-					"Limitez l'accès aux données et opérations de votre logiciel en fonction de l'utilisateur connecté.",
+					"Lancez des campagnes de soldes en appliquant une réduction sur tout ou partie de vos articles.",
+				],
+			},
+			{
+				title: "Ajoutez une politique de prix dégressifs",
+				description: [
+					"Programmez la baisse du prix de vente de vos articles, à intervalles réguliers. Par exemple, vous pouvez définir un prix de vente initial et un prix de vente après 30 jours, 60 jours, etc.",
 				],
 			},
 		],
@@ -125,18 +137,6 @@ const columns: RoadmapColumn[] = [
 				],
 			},
 			{
-				title: "Campagnes de soldes",
-				description: [
-					"Lancez des campagnes de soldes en proposant à votre déposant d'autoriser une réduction sur le prix de vente de ses articles.",
-				],
-			},
-			{
-				title: "Ajoutez une politique de prix dégressifs",
-				description: [
-					"Programmez la baisse du prix de vente de vos articles, à intervalles réguliers. Par exemple, vous pouvez définir un prix de vente initial et un prix de vente après 30 jours, 60 jours, etc.",
-				],
-			},
-			{
 				title: "Vos rendez-vous déposants reliés à votre logiciel",
 				description: [
 					"Offrez à vos déposants une interface pratique de prise de rendez-vous pour leurs dépôts. Côté boutique, votre gestion de rendez-vous s'intègre désormais dans votre logiciel. Vous pouvez donc, par exemple, consulter la fiche client de votre déposant avant le dépôt.",
@@ -146,6 +146,12 @@ const columns: RoadmapColumn[] = [
 				title: "Votre boutique en ligne reliée à votre stock",
 				description: [
 					"Automatisez la gestion de votre boutique en ligne : lors d’une vente sur votre site, vous êtes notifié et votre stock est automatiquement mis à jour.",
+				],
+			},
+			{
+				title: "Gérez les droits utilisateurs de votre logiciel",
+				description: [
+					"Limitez l'accès aux données et opérations de votre logiciel en fonction de l'utilisateur connecté.",
 				],
 			},
 		],
