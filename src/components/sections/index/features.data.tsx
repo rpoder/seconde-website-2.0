@@ -7,7 +7,7 @@ export const features: Feature[] = [
 	{ title: "Gestion automatisée des cagnottes" },
 	{
 		title: "Application mobile déposant",
-		tag: "Disponible le 15 décembre",
+		tag: "Courant 2025",
 	},
 	{
 		title: "Notifications email déposant",
