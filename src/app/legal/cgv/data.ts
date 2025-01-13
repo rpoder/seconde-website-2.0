@@ -1,24 +1,21 @@
 import type { LegalData } from "../type.ts";
 
-const generalTermsOfSaleData: LegalData = {
-	title: "CGV",
-	updatedAt: new Date("2024-11-07"),
+const generalTermsOfSalesData: LegalData = {
+	title: "Conditions Générales de Vente (CGV)",
+	updatedAt: new Date("2025-01-13"),
 	preamble: {
 		title: "Préambule",
 		content: [
 			{
 				texts: [
 					[
-						"Bienvenue sur Seconde, logiciel en ligne destiné aux dépôts-ventes.",
+						"Bienvenue sur Seconde, le logiciel en ligne dédié aux dépôts-ventes.",
 					],
 					[
 						"Seconde a été conçu pour répondre aux besoins spécifiques des dépôts-ventes. Notre objectif est de proposer un outil moderne, pratique et efficace pour les boutiques et leurs déposants.",
 					],
 					[
 						"Nous avons rédigé ces Conditions Générales de Vente (CGV) avec le souci d'être clairs et transparents quant aux conditions commerciales et contractuelles qui encadrent votre relation avec Seconde. Merci de prendre le temps de les lire attentivement.",
-					],
-					[
-						"En utilisant Seconde, vous acceptez pleinement et sans réserve ces CGV.",
 					],
 					[
 						"Pour toute question, n'hésitez pas à nous contacter à l’adresse suivante : contact@seconde.app.",
@@ -29,34 +26,172 @@ const generalTermsOfSaleData: LegalData = {
 	},
 	sections: [
 		{
-			title: " Objet et Définitions",
+			title: "Objet et Définitions",
 			content: [
 				{
 					texts: [
 						[
-							"Les présentes Conditions Générales de Vente ont pour objet de définir les conditions dans lesquelles Seconde met à votre disposition le logiciel Seconde et les services associés.",
+							"Les présentes Conditions Générales de Vente ont pour objet de définir les conditions dans lesquelles Seconde SARL met à votre disposition le logiciel Seconde et les Services associés.",
 						],
 						[
 							"En commandant nos Services, vous acceptez ces CGV sans réserve et renoncez à tout document contradictoire.",
 						],
-						//		[
-						//			"Seconde, nous, notre : désigne la Société à responsabilité limitée, au capital de ** euros, ayant son siège social sis **, immatriculée au Registre du Commerce et des Sociétés de **, sous le numéro **.",
-						//		],
 						[
-							"Vous : désigne toute personne physique ayant créé un compte sur Seconde.",
+							"Seconde, nous, notre : désigne la Société à responsabilité limitée Seconde, au capital de 1000 euros, ayant son siège social au 60 rue François 1er, 75008 Paris.",
 						],
 						[
-							"Contrat : désigne les présentes Conditions Générales de Vente et les Conditions générales d’utilisation disponibles à l’adresse ici.",
+							"Vous : désigne toute personne physique ayant un compte sur le logiciel Seconde.",
 						],
 						[
-							"Logiciel : désigne le logiciel Seconde, accessible en ligne et permettant la gestion des activités de dépôts-ventes.",
+							"Les CGV : désigne les présentes Conditions Générales de Vente.",
 						],
 						[
-							"Services : désigne l'ensemble des services que Seconde s'engage à vous fournir conformément au Contrat.",
+							"Le Contrat : désigne le contrat de fourniture de services auquel les CGV sont annexées, incluant aussi le devis et les CGU.",
 						],
 						[
-							"Utilisateur : désigne toute personne autorisée à se connecter aux Services selon le Contrat, c'est-à-dire toute personne bénéficiant de son propre accès à votre compte sur le Logiciel.",
+							"Le Logiciel : désigne le logiciel Seconde, accessible en ligne et permettant la gestion des activités de dépôts-ventes.",
 						],
+						[
+							"Les Services : désigne l'ensemble des services que Seconde s'engage à vous fournir conformément au Contrat.",
+						],
+					],
+				},
+			],
+		},
+		{
+			title: "Entrée en vigueur et durée des CGV",
+			content: [
+				{
+					texts: [
+						[
+							"Les présentes CGV sont conclues à la date de signature du Contrat et pour une durée indéterminée.",
+						],
+					],
+				},
+			],
+		},
+		{
+			title: "Abonnement aux Services et conditions",
+			subSections: [
+				{
+					title: "Abonnement aux Services",
+					content: [
+						{
+							texts: [
+								[
+									"L’abonnement à nos Services vous accorde un accès personnel, non exclusif, non cessible et non transférable à votre espace sur le Logiciel Seconde, pour la durée d’un mois.",
+								],
+								[
+									"Cet accès correspond au droit de vous connecter au Logiciel et d’utiliser les Services, conformément à leur destination et pour les besoins propres de votre entreprise.",
+								],
+								[
+									"L’abonnement se renouvelle chaque mois par tacite reconduction et se poursuit jusqu'à sa résiliation. En contrepartie des Services, vous vous engagez à payer mensuellement à Seconde la somme indiquée dans votre devis.",
+								],
+								[
+									"À moins que vous ne résiliiez votre abonnement avant le 20 du mois en cours, vous nous autorisez à vous facturer les frais d'abonnement pour le mois suivant.",
+								],
+							],
+						},
+					],
+				},
+				{
+					title: "Restrictions",
+					content: [
+						{
+							texts: [
+								[
+									"En dehors des droits qui vous sont expressément concédés ci-dessus, toute autre utilisation du Logiciel est interdite.",
+								],
+								[
+									"Cela inclut, sans s’y limiter, toute tentative de :",
+								],
+								[
+									"Contournement des restrictions techniques du Logiciel ;",
+									"Modification, duplication, ou distribution non autorisée du Logiciel ;",
+									"Utilisation contraire à sa finalité ou aux lois en vigueur.",
+								],
+								[
+									"Pour une description détaillée de l’utilisation acceptable des Services et des restrictions spécifiques, nous vous invitons à consulter les CGU.",
+								],
+							],
+						},
+					],
+				},
+				{
+					title: "Résiliation en cas d'utilisation frauduleuse",
+					content: [
+						{
+							texts: [
+								[
+									"En cas d’utilisation frauduleuse, de détournement ou de non-respect des conditions prévues dans les CGV ou les CGU, Seconde se réserve le droit de résilier immédiatement et sans préavis votre abonnement.",
+								],
+								[
+									"Cette résiliation pourra être effectuée sans recours à des formalités judiciaires, et n’exclut pas la possibilité pour Seconde d’engager des actions légales afin d’obtenir réparation du préjudice subi.",
+								],
+							],
+						},
+					],
+				},
+			],
+		},
+		{
+			title: "Paiement",
+			subSections: [
+				{
+					title: "Prix et modalités de paiement",
+					content: [
+						{
+							texts: [
+								[
+									"Le prix de l’abonnement est indiqué dans votre devis.",
+								],
+								[
+									"L’abonnement est payé entre le 1er et le 5 du mois et est valable pour le mois en cours.",
+								],
+							],
+						},
+					],
+				},
+				{
+					title: "Non-paiement, pénalités et contestations",
+					content: [
+						{
+							texts: [
+								[
+									"En cas de non-paiement d’une facture, nous vous enverrons une notification par email. Si le paiement n’est pas régularisé dans un délai de 7 jours ouvrés après réception de la notification, Seconde se réserve le droit de suspendre les accès aux Services jusqu'à la régularisation complète des sommes dues.",
+								],
+								[
+									"Sans régularisation dans un délai de 15 jours ouvrés à réception de la notification, Seconde pourra résilier le Contrat, sans préavis ni formalité judiciaire, tout en conservant le droit de récupérer les sommes dues.",
+								],
+								[
+									"Toute somme non payée à l'échéance prévue par la loi entraîne l’application de pénalités pour retard de paiement, basées sur le taux d'intérêt légal, conformément à l'article L. 441-10 du Code de commerce. Nous vous facturerons également une indemnité forfaitaire de 40 euros pour frais de recouvrement, comme prévu par les articles L. 441-6 et L. 441-10 du Code de commerce.",
+								],
+								[
+									"En cas de contestation d'une facture, le paiement de la facture contestée demeure dû. Si la contestation est admise, un remboursement vous sera adressé dans les 45 jours ouvrés.",
+								],
+							],
+						},
+					],
+				},
+				{
+					title: "Révision des tarifs d’abonnement",
+					content: [
+						{
+							texts: [
+								[
+									"Seconde se réserve le droit de modifier les tarifs de l’abonnement à tout moment, notamment pour refléter les évolutions économiques ou l’augmentation des coûts liés à la fourniture des Services.",
+								],
+								[
+									"Toute modification tarifaire vous sera notifiée par écrit, avec un préavis minimum de 30 jours, via e-mail ou tout autre moyen de communication approprié.",
+								],
+								[
+									"Les nouveaux tarifs seront applicables à la prochaine échéance de facturation, sauf accord contraire entre les parties.",
+								],
+								[
+									"Si vous n'acceptez pas les nouveaux tarifs, vous pourrez résilier votre abonnement conformément aux modalités prévues à l’Article 5 Résiliation des présentes CGV, avant l’entrée en vigueur des nouveaux tarifs.",
+								],
+							],
+						},
 					],
 				},
 			],
@@ -70,10 +205,10 @@ const generalTermsOfSaleData: LegalData = {
 						{
 							texts: [
 								[
-									"Conformément à la législation en vigueur, notamment le 3° bis du I de l'article 286 du Code général des impôts, et à la référence BOI-TVA-DECLA-30-10-30 du bulletin officiel des finances publiques - Impôts (BOFiP-Impôts), tout logiciel de caisse utilisé par un assujetti à la TVA doit respecter les conditions d’inaltérabilité, de sécurisation, de conservation et d’archivage des données. Ces exigences visent à  garantir la fiabilité des informations comptables et à prévenir la fraude à la TVA. ",
+									"Ces exigences visent à garantir la fiabilité des informations comptables et à prévenir la fraude à la TVA.",
 								],
 								[
-									"En tant qu'éditeur de le Logiciel Seconde, nous certifions que notre Logiciel est conforme à ces exigences.",
+									"Conformément à la législation en vigueur, notamment le 3° bis du I de l'article 286 du Code Général des Impôts et au BOI-TVA-DECLA-30-10-30 du Bulletin Officiel des Finances Publiques - Impôts, tout logiciel de caisse utilisé par un assujetti à la TVA doit respecter les principes d’inaltérabilité, de sécurisation, de conservation et d’archivage des données enregistrées.",
 								],
 							],
 						},
@@ -85,7 +220,13 @@ const generalTermsOfSaleData: LegalData = {
 						{
 							texts: [
 								[
-									"Pour attester de la conformité de Seconde aux normes légales, une attestation individuelle de certification vous sera délivrée lors de l'acquisition de la licence d’utilisation. Cette attestation est nominative et doit être conservée précieusement, car elle pourra être exigée par l'administration fiscale en cas de contrôle. L'attestation précise les caractéristiques de le Logiciel, notamment son nom et sa version. Cette attestation reste valable pour les versions mineures ultérieures de le Logiciel, sous réserve que celles-ci respectent les mêmes exigences de conformité. ",
+									"Pour attester de la conformité du Logiciel Seconde aux normes légales, une attestation individuelle de certification vous sera délivrée lors de la signature du Contrat.",
+								],
+								[
+									"Cette attestation est nominative et doit être conservée précieusement, car elle pourra être exigée par l'administration fiscale en cas de contrôle.",
+								],
+								[
+									"L'attestation précise les caractéristiques du Logiciel, notamment son nom et sa version. Cette attestation reste valable pour les versions mineures ultérieures du Logiciel, sous réserve que celles-ci respectent les mêmes exigences de conformité.",
 								],
 							],
 						},
@@ -97,137 +238,28 @@ const generalTermsOfSaleData: LegalData = {
 						{
 							texts: [
 								[
-									"Lors de votre première connexion au Logiciel, l'attestation de certification vous sera présentée pour signature électronique. Cette signature est obligatoire pour accéder aux fonctionnalités de caisse du Logiciel.",
+									"Lors de la signature du Contrat, l'attestation de certification vous sera présentée pour signature simultanée.",
 								],
 								[
-									"En cas de publication d'une nouvelle version majeure du Logiciel, une nouvelle attestation de conformité vous sera fournie. Cette attestation devra également être signée pour continuer à utiliser le Logiciel.",
-								],
-								[
-									"L'attestation signée restera disponible à tout moment via votre compte et pourra être téléchargée si nécessaire.",
+									"En cas de publication d'une nouvelle version majeure du Logiciel, une nouvelle attestation de conformité vous sera fournie. Cette attestation devra également être signée pour que vous puissiez continuer à utiliser le logiciel en conformité avec la législation.",
 								],
 							],
 						},
 					],
 				},
 				{
-					title: "Conséquences du non-respect",
+					title: "Responsabilités fiscales",
 					content: [
 						{
 							texts: [
 								[
-									"En cas de non-respect des obligations légales, y compris l'absence de signature de l’attestation ou le manquement à la fourniture de cette dernière en cas de contrôle de l'administration fiscale, Seconde ne pourra pas être tenu responsable des éventuelles sanctions ou amendes imposées par l’administration fiscale.",
+									"Seconde ne pourra pas être tenu responsable des éventuelles sanctions ou amendes imposées par l’administration fiscale en cas de non-respect des obligations légales, y compris la non-présentation de l’attestation en cas de contrôle fiscal, ou l’utilisation non conforme du logiciel, notamment en contournant les fonctionnalités de sécurisation ou en effectuant des modifications non autorisées.",
+								],
+								[
+									"En utilisant le Logiciel Seconde, vous vous engagez à respecter vos obligations légales en matière de tenue et de conservation des données comptables et fiscales.",
 								],
 							],
 						},
-					],
-				},
-			],
-		},
-		{
-			title: "Licence d’utilisation et propriété intellectuelle",
-			subSections: [
-				{
-					title: "Licence d'utilisation",
-					content: [
-						{
-							texts: [
-								[
-									"Seconde vous accorde une licence personnelle, non exclusive, non cessible et non transférable, d’utilisation de le Logiciel, pendant toute la durée du Contrat.",
-								],
-								[
-									"La licence d’utilisation correspond au droit de vous connecter à le Logiciel, via Internet, et d’utiliser les Services, conformément à leur destination et pour vos besoins propres.",
-								],
-								[
-									"En contrepartie, vous vous engagez à payer à Seconde mensuellement la somme indiquée dans le devis ci-joint.",
-								],
-								[
-									"Pour lier des boutiques supplémentaires à votre compte, merci de nous en aviser par mail à l’adresse contact@seconde.app. Chaque boutique additionnelle fera l'objet d'un nouveau devis.",
-								],
-							],
-						},
-					],
-				},
-				{
-					title: "Restrictions",
-					content: [
-						{
-							texts: [
-								[
-									"En dehors des droits concédés ci-dessus et sans préjudice de ceux-ci, vous n’êtes pas autorisé à utiliser le Logiciel pour une autre finalité, par exemple, et sans que cette liste soit limitative : vous ne pourrez en aucun cas mettre les Services à disposition d’un tiers, et vous interdisez strictement toute autre utilisation, en particulier toute copie, transmission, distribution, adaptation, modification, traduction, arrangement ou décompilation.",
-								],
-								[
-									"Il est convenu que vous ne pouvez pas corriger par vous-même toute anomalie quelle qu'elle soit, Seconde se réservant seul cette responsabilité et ce droit.",
-								],
-							],
-						},
-					],
-				},
-				{
-					title: "Résiliation en cas d'utilisation frauduleuse",
-					content: [
-						{
-							texts: [
-								[
-									"En cas d'utilisation frauduleuse ou de détournement du Logiciel, Seconde se réserve le droit de résilier immédiatement et sans préavis le présent Contrat. Cette résiliation peut se faire sans formalités judiciaires, et sans exclure d'éventuelles actions légales que Seconde pourrait entreprendre à votre encontre pour obtenir réparation du préjudice subi.",
-								],
-							],
-						},
-					],
-				},
-				{
-					title: "Garantie",
-					content: [
-						{
-							texts: [
-								[
-									"Nous vous garantissons que nous disposons de tous les droits de propriété intellectuelle permettant de conclure le présent contrat et à ce titre, nous garantissons que les Services fournis en exécution du Contrat ne portent pas atteinte à des droits de tiers et ne constituent pas une contrefaçon d'une œuvre préexistante.",
-								],
-							],
-						},
-					],
-				},
-			],
-		},
-		{
-			title: "Hébergement et Sécurité des Données",
-			content: [
-				{
-					texts: [
-						[
-							"Le Logiciel est hébergé sur les serveurs d'AWS en France, certifiés pour leur conformité aux normes de sécurité internationales, telles que ISO 27001, ISO 27017 et ISO 27018. Toutes les données sont stockées et traitées exclusivement sur le territoire français, assurant ainsi leur soumission directe aux réglementations françaises et européennes, notamment au Règlement Général sur la Protection des Données (RGPD). Cette localisation garantit également la souveraineté de vos données, les protégeant contre les demandes d'accès de juridictions étrangères.",
-						],
-						[
-							"Seconde s’engage à mettre en œuvre toutes les mesures techniques et organisationnelles nécessaires pour assurer la sécurité des données hébergées, offrant ainsi une protection maximale à vos informations.",
-						],
-						[
-							"Toutes vos données sont encadrées par le RGPD, auquel nous adhérons strictement. Certaines de vos données, notamment celles relatives aux encaissements, sont également soumises aux dispositions du Livre des Procédures Fiscales (LPF), article L102 B, et du Bulletin Officiel des Finances Publiques - Impôts (BOFIP), BOI-TVA-DECLA-30-10-30. Ces dispositions garantissent la conformité aux exigences légales en matière de sécurisation et de conservation des données.",
-						],
-						[
-							"Pour en savoir plus sur la manière dont nous traitons et conservons vos données, nous vous invitons à consulter notre Politique de Confidentialité.",
-						],
-					],
-				},
-			],
-		},
-
-		{
-			title: "Période d’essai",
-			content: [
-				{
-					texts: [
-						[
-							"Dans le cadre de notre période d’essai, Seconde vous accorde gratuitement une licence non exclusive d’utilisation de le Logiciel, conformément à sa destination et pour vos besoins propres, pour un temps limité.",
-							"Le présent contrat doit être respecté pendant toute la durée de la période d'essai.",
-						],
-						[
-							"A l’issue de cette période d’essai, vous aurez la possibilité de valider votre abonnement aux Services et d’adhérer de nouveau au Contrat. Dans le cas où vous ne confirmez pas votre abonnement, la licence ne sera pas maintenue.",
-						],
-						[
-							"Pendant la période d'essai gratuite, vous pouvez utiliser notre logiciel pour générer des données d’encaissement. Conformément aux obligations légales, notamment celles définies à l’article L102 B du Livre des procédures fiscales (LPF) et à la référence BOI-TVA-DECLA-30-10-30 du Bulletin officiel des finances publiques - impôts (BOFiP), toutes les données d’encaissement générées seront conservées pendant une durée de 6 ans (à compter de la date de la dernière opération). Nous sommes contraints de conserver ces données pour répondre aux exigences fiscales et réglementaires, même si vous ne souscrivez pas à un abonnement payant après la période d'essai. Passé ce délai, vos données seront anonymisées.",
-						],
-						[
-							"Pour plus de précisions sur la manière dont nous traitons et conservons vos données, vous pouvez vous référez à notre Politique de Confidentialité.",
-						],
 					],
 				},
 			],
@@ -251,150 +283,172 @@ const generalTermsOfSaleData: LegalData = {
 			],
 		},
 		{
-			title: "Modalités de paiement",
-			content: [
-				{
-					texts: [
-						[
-							"Le prix de l’abonnement est indiqué dans votre devis (65 euros HT par mois par boutique).",
-							"L’abonnement est payé chaque début de mois par prélèvement automatique (mandat de prélèvement SEPA).",
-						],
-						[
-							"Si un prélèvement SEPA échoue pour une raison quelconque (fonds insuffisants, annulation, etc.), des frais supplémentaires de 10 € HT seront ajoutés lors de la prochaine tentative de prélèvement.",
-						],
-						[
-							"En cas de contestation d'une facture, le paiement de la facture contestée demeure dû. Si la contestation est admise, un avoir vous sera adressé dans les meilleurs délais.",
-						],
-						[
-							"Faute de paiement, Seconde vous adressera une lettre recommandée avec accusé de réception. Dans l’hypothèse où, passé le délai de 15 jours à compter de la réception de ladite lettre, vous ne vous seriez pas acquitté de la totalité des sommes dues, intérêts et frais compris, Seconde pourra interrompre l'accès aux Services et résilier le présent Contrat, sans préavis ni formalité judiciaire, tout en conservant le droit de récupérer les sommes dues.",
-						],
-						[
-							"Toute somme non payée à l'échéance figurant sur la facture entraîne l’application de pénalités pour retard de paiement, basées sur 3 fois le taux d'intérêt légal, conformément à l'article L. 441-10 du Code de commerce. Nous vous facturerons également une indemnité forfaitaire de 40 euros pour frais de recouvrement, comme prévu par les articles L. 441-6 et L. 441-10 du Code de commerce.",
-						],
-					],
-				},
-			],
-		},
-		{
-			title: "Responsabilité",
-			content: [
-				{
-					texts: [
-						[
-							"Seconde ne pourra en aucun cas être tenu responsable des dommages indirects que vous pourriez subir dans le cadre du présent Contrat. Les dommages indirects incluent notamment, sans que cette liste soit exhaustive, la perte de profits, de données, d’opportunités, ou tout préjudice commercial, ainsi que les réclamations de tiers, même si Seconde avait été informé de la possibilité de tels dommages.",
-						],
-						[
-							"En tout état de cause, la responsabilité de Seconde pour tout dommage sera strictement limitée aux sommes que vous avez effectivement payées dans le cadre du présent Contrat.",
-						],
-					],
-				},
-			],
-		},
-		{
-			title: "Force majeure",
-			content: [
-				{
-					texts: [
-						[
-							"Seconde ne pourra être tenu responsable de l’inexécution de l’une de ses obligations contractuelles dans le cadre du présent Contrat, si cette inexécution est causée par un événement de force majeure. Par force majeure, on entend notamment, sans que cette liste soit limitative, des catastrophes naturelles, des grèves, des pannes de réseaux de télécommunication ou d’énergie, ainsi que tout autre événement imprévisible et indépendant de notre volonté.",
-						],
-						[
-							"En cas de force majeure, les obligations des parties seront suspendues pendant toute la durée de l'événement, et aucune compensation ne pourra être réclamée.",
-						],
-						[
-							"Si la durée de la force majeure est supérieure à un mois, chaque partie pourra résilier le Contrat à tout moment par l'envoi d'une lettre recommandée avec accusé de réception à l'autre partie, sans préavis et sans indemnité de part et d'autre.",
-						],
-					],
-				},
-			],
-		},
-		{
 			title: "Résiliation",
 			content: [
 				{
 					texts: [
 						[
-							"Pour résilier votre abonnement, envoyez simplement un email à contact@seconde.app au plus tard le 20 du mois précédent la résiliation. Vous avez aussi la possibilité d’adresser une lettre recommandée avec accusé de réception au siège social de Seconde. ",
+							"La résiliation de votre abonnement entraîne la suppression de vos accès aux Services ainsi que la suppression définitive des données associées à votre espace Seconde, sous réserve des obligations légales de conservation des données.",
 						],
 						[
-							"Si le prélèvement automatique pour le mois suivant a déjà été effectué alors que vous avez demandé la résiliation avant le 20 du mois, nous vous rembourserons la somme débitée. Si la résiliation est demandée après le 20 du mois, vous continuerez d’avoir accès aux Services le mois suivant et il sera facturé normalement.",
+							"Si vous recréez un compte ou vous réabonnez ultérieurement, vos données précédentes ne pourront pas être récupérées, même partiellement.",
 						],
 						[
-							"Nous pouvons résilier le Contrat si vous ne respectez pas vos obligations. Nous vous adresserons d’abord une lettre recommandée, et si le problème n'est pas corrigé dans les 15 jours suivant la réception de ladite lettre, la résiliation se fera sans formalités supplémentaires.",
+							"Pour résilier votre abonnement, envoyez simplement un email à l’adresse contact@seconde.app au plus tard le 20 du mois précédent la résiliation. Vous avez aussi la possibilité d’adresser une lettre recommandée avec accusé de réception au siège social de Seconde.",
 						],
 						[
-							"En cas d'utilisation frauduleuse ou de détournement du Logiciel, ou dans le cas où la quantité d’informations chargées créerait des problèmes de fonctionnement aux serveurs, Seconde se réserve le droit de résilier immédiatement et sans préavis le Contrat, sans formalité judiciaire.",
+							"Si la résiliation est demandée après le 20 du mois, vous continuerez d’avoir accès aux Services le mois suivant et il sera facturé normalement.",
 						],
 					],
 				},
 			],
 		},
 		{
-			title: "Réversibilité",
-			content: [
+			title: "Limitation de la Responsabilité de Seconde",
+			subSections: [
 				{
-					texts: [
-						[
-							"À tout moment en cours d'exécution du Contrat, ou si le Contrat est résilié, Seconde s'engage à vous aider à transférer vos données vers un autre système.",
-						],
-						[
-							"Cette aide au transfert correspond à la restitution de vos données. Celles-ci vous seront envoyées par e-mail sous forme de fichier SQL ou .CSV, format facilement exploitable par un tiers. ",
-						],
-						[
-							"Les opérations de transfert ne concernent pas les données saisies pendant la période d'essai.",
-						],
+					title: "Étendue de la Responsabilité",
+					content: [
+						{
+							texts: [
+								[
+									"Seconde s'engage à fournir un logiciel conforme à sa destination et à garantir un service de qualité. Toutefois, sa responsabilité est strictement limitée aux engagements expressément prévus dans le cadre du Contrat.",
+								],
+								[
+									"Seconde ne pourra en aucun cas être tenu responsable des dommages indirects que vous pourriez subir. Les dommages indirects incluent notamment, sans que cette liste soit exhaustive : la perte de profits, la perte ou corruption de données, la perte d’opportunités, ou tout préjudice commercial, ainsi que les réclamations de tiers, même si Seconde avait été informé de la possibilité de tels dommages.",
+								],
+								[
+									"De plus, les dysfonctionnements techniques ou interruptions de service résultant de causes externes, telles que des pannes d’infrastructures ou des incidents chez des fournisseurs tiers, ne sauraient engager la responsabilité de Seconde.",
+								],
+							],
+						},
 					],
 				},
-			],
-		},
-		{
-			title: "Loi applicable et Juridiction compétente",
-			content: [
 				{
-					texts: [
-						["Le présent Contrat est régi par la loi française."],
-						[
-							"En cas de difficulté sur l'interprétation ou l'exécution du Contrat, les parties s'engagent à tenter  de résoudre le problème à l’amiable.",
-						],
-						[
-							"En cas de désaccord persistant, les tribunaux français seront seuls compétents. ",
-						],
+					title: "Limitation Financière",
+					content: [
+						{
+							texts: [
+								[
+									"En tout état de cause, la responsabilité totale de Seconde, toutes causes confondues, sera limitée au montant que vous avez effectivement payé au titre du Contrat pour l’utilisation du Logiciel, sur une période de 12 mois précédant l’incident ayant entraîné le dommage.",
+								],
+							],
+						},
 					],
 				},
-			],
-		},
-		{
-			title: "Dispositions diverses",
-			content: [
 				{
-					texts: [
-						[
-							"Si une ou plusieurs clauses sont déclarées nulles par une décision de justice ou s'avèrent impossible à mettre en œuvre, la validité des autres clauses ne sera pas affectée et les parties s'engagent à négocier de bonne foi une disposition de remplacement.",
-						],
-						[
-							"Les titres et sous titres figurant dans le présent Contrat sont inclus pour faciliter la lecture et ne peuvent en aucun cas servir à interpréter les clauses du Contrat.",
-						],
-						[
-							"Le fait pour une partie de ne pas réclamer le Logiciel d'une disposition du présent Contrat ou de tolérer temporairement ou durablement son non-respect, ne pourra en aucun cas être interprété comme une renonciation à ses droits. De même, si une partie tolère un manquement ou une exécution imparfaite du Contrat, cela ne donne aucun droit supplémentaire à l'autre partie.",
-						],
+					title: "Force Majeure",
+					content: [
+						{
+							texts: [
+								[
+									"Seconde ne pourra être tenu responsable des retards ou manquements dans l’exécution de ses obligations résultant d’un événement de force majeure.",
+								],
+								[
+									"Par force majeure, on entend notamment, sans que cette liste soit exhaustive : les catastrophes naturelles, les interruptions des réseaux de télécommunication ou d’énergie, les incidents techniques indépendants de notre volonté ou les pannes d’infrastructures essentielles.",
+								],
+								[
+									"Si la durée de l’événement de force majeure dépasse un mois, chacune des parties pourra résilier le Contrat sans préavis ni indemnité, par l’envoi d’une lettre recommandée avec accusé de réception.",
+								],
+							],
+						},
 					],
 				},
-			],
-		},
-		{
-			title: "Modifications des CGV",
-			content: [
 				{
-					texts: [
-						[
-							"Seconde se réserve le droit de modifier les présentes CGV à tout moment. Vous serez informé de toute modification par email ou lors de votre connexion au logiciel.",
-						],
-						[
-							"Si vous souhaitez exprimer votre désaccord ou obtenir des explications supplémentaires concernant ces modifications, vous pouvez nous contacter à l'adresse suivante : contact@seconde.app.",
-						],
-						[
-							"Le fait de continuer à utiliser le logiciel après notification des modifications vaudra acceptation des nouvelles CGV.",
-						],
+					title: "Propriété intellectuelle",
+					content: [
+						{
+							texts: [
+								[
+									"Nous vous garantissons que nous disposons de tous les droits de propriété intellectuelle permettant de conclure le Contrat et à ce titre, nous garantissons que les Services fournis en exécution du Contrat ne portent pas atteinte à des droits de tiers et ne constituent pas une contrefaçon d'une œuvre préexistante.",
+								],
+							],
+						},
+					],
+				},
+				{
+					title: " Communication et références commerciales",
+					content: [
+						{
+							texts: [
+								[
+									"Vous nous autorisez à mentionner votre nom et votre qualité d’utilisateur lors d'échanges avec des prospects, partenaires ou autres clients potentiels dans le cadre de discussions commerciales.",
+								],
+								[
+									"Vous nous autorisez à afficher votre nom et/ou votre logo sur notre site vitrine.",
+								],
+								[
+									"Ces utilisations seront effectuées de manière professionnelle et respectueuse de votre image. Aucune donnée confidentielle ne sera divulguée sans autorisation préalable. Cette autorisation est accordée à titre gratuit et peut être révoquée à tout moment sur simple demande écrite, avec un délai raisonnable pour appliquer cette modification.",
+								],
+							],
+						},
+					],
+				},
+				{
+					title: "Réversibilité",
+					content: [
+						{
+							texts: [
+								[
+									"À tout moment en cours d'exécution du Contrat, ou si le Contrat est résilié, Seconde s'engage à vous aider à transférer vos données vers un autre système.",
+								],
+								[
+									"Cette aide au transfert correspond à la restitution de vos données. Celles-ci vous seront envoyées par e-mail sous forme de fichier SQL ou .CSV, format facilement exploitable par un tiers.",
+								],
+								[
+									"Les opérations de transfert concernent les articles en stock et les fichiers clients.",
+								],
+							],
+						},
+					],
+				},
+				{
+					title: "Loi applicable et Juridiction compétente",
+					content: [
+						{
+							texts: [
+								["Le Contrat est régi par la loi française."],
+								[
+									"En cas de difficulté sur l'interprétation ou l'exécution des CGV, les parties s'engagent à tenter de résoudre le problème à l’amiable. En cas de désaccord persistant, les tribunaux français seront seuls compétents.",
+								],
+							],
+						},
+					],
+				},
+				{
+					title: "Dispositions diverses",
+					content: [
+						{
+							texts: [
+								[
+									"Si une ou plusieurs clauses sont déclarées nulles par une décision de justice ou s'avèrent impossible à mettre en œuvre, la validité des autres clauses ne sera pas affectée et les parties s'engagent à négocier de bonne foi une disposition de remplacement.",
+								],
+								[
+									"Le fait pour une partie de ne pas réclamer l’application d'une clause du Contrat ou de tolérer temporairement ou durablement son non-respect, ne pourra en aucun cas être interprété comme une renonciation à ses droits. De même, si une partie tolère un manquement ou une exécution imparfaite du Contrat, cela ne donne aucun droit supplémentaire à l'autre partie.",
+								],
+							],
+						},
+					],
+				},
+				{
+					title: "Modifications des CGV",
+					content: [
+						{
+							texts: [
+								[
+									"Seconde se réserve le droit de modifier les CGV à tout moment. Vous serez informé de toute modification par email ou lors de votre connexion au logiciel, 15 jours avant les modifications.",
+								],
+								[
+									"Si vous souhaitez exprimer votre désaccord ou obtenir des explications supplémentaires concernant ces modifications, vous pouvez nous contacter à l'adresse contact@seconde.app.",
+								],
+								[
+									"Si vous n’acceptez pas les nouvelles CGV, vous pouvez résilier votre abonnement sans préavis.",
+								],
+								[
+									"Si vous continuez à utiliser le logiciel après application des modifications, cela vaut acceptation des nouvelles CGV.",
+								],
+							],
+						},
 					],
 				},
 			],
@@ -402,4 +456,4 @@ const generalTermsOfSaleData: LegalData = {
 	],
 };
 
-export default generalTermsOfSaleData;
+export default generalTermsOfSalesData;
