@@ -1,24 +1,21 @@
 import type { LegalData } from "../type.ts";
 
 const generalTermsOfUseData: LegalData = {
-	title: "CGV",
-	updatedAt: new Date("2024-11-07"),
+	title: "Conditions Générales d’Utilisation (CGU)",
+	updatedAt: new Date("2025-01-13"),
 	preamble: {
 		title: "Préambule",
 		content: [
 			{
 				texts: [
 					[
-						"Bienvenue sur Seconde, logiciel en ligne destiné aux dépôts-ventes.",
+						"Bienvenue sur Seconde, le logiciel en ligne dédié aux dépôts-ventes.",
 					],
 					[
 						"Seconde a été conçu pour répondre aux besoins spécifiques des dépôts-ventes. Notre objectif est de proposer un outil moderne, pratique et efficace pour les boutiques et leurs déposants.",
 					],
 					[
 						"Nous avons rédigé ces Conditions Générales d'Utilisation (CGU) avec le souci d'être clairs et transparents quant aux règles qui encadrent l'utilisation du logiciel. Merci de prendre le temps de les lire attentivement.",
-					],
-					[
-						"En utilisant Seconde, vous acceptez pleinement et sans réserve ces CGU.",
 					],
 					[
 						"Pour toute question, n'hésitez pas à nous contacter à l’adresse suivante : contact@seconde.app.",
@@ -34,61 +31,25 @@ const generalTermsOfUseData: LegalData = {
 				{
 					texts: [
 						[
-							"Les présentes CGU ont pour objet de définir les conditions d'utilisation du logiciel Seconde et des services associés.",
+							"Les présentes Conditions Générales d’Utilisation ont pour objet de définir les conditions d'utilisation du logiciel Seconde et des Services associés.",
 						],
 						[
-							"Seconde, nous, notre : désigne la société éditrice du logiciel Seconde, société à responsabilité limitée, immatriculée au Registre du Commerce et des Sociétés de **, sous le numéro **.",
+							"En commandant nos services, vous acceptez ces CGU sans réserve et renoncez à tout document contradictoire.",
 						],
 						[
-							"Logiciel : désigne le logiciel Seconde, accessible en ligne et permettant la gestion des activités de dépôts-ventes.",
+							"Seconde, nous, notre : désigne la Société à responsabilité limitée Seconde, au capital de 1000 euros, ayant son siège social au 60 rue François 1er, 75008 Paris.",
 						],
 						[
-							"Services : désigne l'ensemble des services que Seconde s'engage à vous fournir, conformément aux CGU et CGV. ",
+							"Vous : désigne toute personne physique ayant un compte sur le logiciel Seconde.",
 						],
 						[
-							"Vous : désigne toute personne physique ayant créé un compte sur Seconde.",
+							"Les CGU : désigne les présentes Conditions Générales d’Utilisation.",
 						],
 						[
-							"Utilisateur : désigne toute personne ayant accès au Logiciel et bénéficiant des Services.",
-						],
-					],
-				},
-			],
-		},
-		{
-			title: "Accès aux Services",
-			content: [
-				{
-					texts: [
-						[
-							"Le Logiciel est accessible 24h/24 et 7j/7, sauf interruptions pour des raisons techniques ou de maintenance. Nous nous engageons à faire de notre mieux pour que le service soit continuellement disponible. Toutefois, nous ne pouvons garantir une accessibilité sans interruption.",
+							"Le Logiciel : désigne le logiciel Seconde, accessible en ligne et permettant la gestion des activités de dépôts-ventes.",
 						],
 						[
-							"Seconde ne pourra être tenue responsable en cas d’interruptions, de bugs ou d’erreurs affectant la disponibilité ou la performance du Logiciel.",
-						],
-						[
-							"Vous êtes responsable de l'accès à Internet et des équipements nécessaires pour utiliser le Logiciel.",
-						],
-					],
-				},
-			],
-		},
-		{
-			title: "Inscription et Compte Utilisateur",
-			content: [
-				{
-					texts: [
-						[
-							"Pour accéder au Logiciel, vous devez créer un compte en fournissant des informations exactes et complètes. ",
-						],
-						[
-							"Il est possible d’attribuer plusieurs identifiants à un même compte, permettant ainsi à différents utilisateurs d’accéder à le Logiciel tout en étant liés à la même organisation. Vous êtes seul responsable de toute activité réalisée sous votre compte, et de de la confidentialité de tous les identifiants et mots de passe rattachés à votre compte.",
-						],
-						[
-							"Si vous gérez plusieurs boutiques, vous pouvez les regrouper sous un seul et même compte. Chaque boutique disposera alors de ses propres modules de gestion et de caisse, tout en partageant les informations des clients et leurs cagnottes.",
-						],
-						[
-							"En cas de perte ou de vol de vos identifiants, veuillez nous contacter immédiatement.",
+							"Les Services : désigne l'ensemble des services que Seconde s'engage à vous fournir conformément aux CGU et CGV.",
 						],
 					],
 				},
@@ -103,40 +64,80 @@ const generalTermsOfUseData: LegalData = {
 							"Seconde propose une solution complète pour gérer les activités des dépôts-ventes, incluant :",
 						],
 						[
-							" - Le paramétrage des dépôts (partage des parts déposant/boutique, durée de mise en vente des articles, taux de TVA, etc.).",
-						],
-						[
+							"- Le paramétrage des dépôts (partage des parts déposant/boutique, durée de mise en vente des articles, etc.).",
 							"- L'enregistrement des dépôts classiques et des dépôts en achat comptant.",
-						],
-						["- L'enregistrement des achats fournisseurs."],
-						[
-							"- La gestion des stocks et l’impression d’étiquettes.",
-						],
-						["- La vente d’articles."],
-						[
-							" - La création et gestion des fichiers clients/déposants, avec notifications automatiques par email en cas de vente ou d’invendus à récupérer.",
-						],
-						[
+							"- L'enregistrement des achats auprès de fournisseurs professionnels.",
+							"- La gestion des stocks.",
+							"- La génération d’étiquettes.",
+							"- La vente d’articles.",
+							"- La création et gestion des fichiers clients/déposants.",
 							"- La gestion des cagnottes clients : chaque déposant dispose d'une cagnotte qui s’actualise automatiquement après chaque vente ou paiement.",
-						],
-						[
-							"- La gestion des paiements déposant et des restitutions d’invendus, ",
-						],
-						[
-							"- La gestion des accès multiples : chaque compte boutique peut être relié à plusieurs identifiants, permettant à différents utilisateurs d'accéder au Logiciel tout en étant associés à la même boutique.",
-						],
-						[
-							"- La gestion multi-boutiques : plusieurs boutiques peuvent être créées sous un même compte, partageant les informations clients tout en disposant de modules de gestion et de caisse distincts pour chaque boutique.",
-						],
-						[
+							"- La gestion des paiements déposant et des restitutions d’invendus.",
+							"- La notification des déposants par email.",
+							"- La gestion des accès multiples : plusieurs identifiants peuvent permettre d’accéder au même espace.",
+							"- La gestion multi-boutiques : plusieurs boutiques peuvent être créées et gérées sous un même espace.",
 							"- La clôture des périodes (jour, mois, année) et la production de documents comptables.",
-						],
-						[
 							"- La visualisation des statistiques de dépôts et de ventes.",
 						],
 						[
 							"Nous nous réservons le droit de faire évoluer le Logiciel en ajoutant, modifiant ou supprimant des fonctionnalités pour améliorer le service.",
 						],
+					],
+				},
+			],
+		},
+		{
+			title: "Accès aux Services",
+			subSections: [
+				{
+					title: "Garanties d’accès aux Services",
+					content: [
+						{
+							texts: [
+								[
+									"Le Logiciel Seconde est accessible de 6h à 22h 7j/7, sauf interruptions pour des raisons techniques, de maintenance, ou en cas de force majeure.",
+								],
+								[
+									"Nous mettons tout en œuvre pour assurer une disponibilité continue du Logiciel. Toutefois, nous ne pouvons garantir une accessibilité sans interruption ni une absence totale de bugs ou d’erreurs affectant sa disponibilité ou ses performances. Seconde ne saurait être tenu responsable des interruptions, anomalies ou erreurs techniques indépendantes de notre volonté.",
+								],
+								[
+									"Par ailleurs, il vous incombe de disposer d’un accès à Internet et des équipements adéquats (matériels et logiciels) nécessaires pour utiliser le Logiciel. Ces prérequis sont à votre charge exclusive.",
+								],
+							],
+						},
+					],
+				},
+				{
+					title: "Attribution des accès",
+					content: [
+						{
+							texts: [
+								[
+									"Pour accéder au Logiciel, Seconde vous attribue au moins un identifiant unique. Cet identifiant vous permet d'accéder à votre espace personnalisé, configuré sur la base des informations fournies, qui se doivent d'être exactes et complètes.",
+								],
+								[
+									"Plusieurs identifiants peuvent être attribués à un même espace, permettant à différents utilisateurs de votre organisation d’accéder au Logiciel.",
+								],
+								[
+									"Si vous gérez plusieurs boutiques, celles-ci peuvent être regroupées sous un même espace. Chaque boutique disposera de modules de gestion distincts (stocks, ventes, comptabilité) tout en partageant des données communes, telles que les informations des clients et leurs cagnottes.",
+								],
+							],
+						},
+					],
+				},
+				{
+					title: "Confidentialité des accès",
+					content: [
+						{
+							texts: [
+								[
+									"Vous êtes responsable de la confidentialité de tous les identifiants et mots de passe qui vous sont attribués.",
+								],
+								[
+									"En cas de perte ou de vol de vos identifiants, veuillez nous contacter immédiatement.",
+								],
+							],
+						},
 					],
 				},
 			],
@@ -153,74 +154,62 @@ const generalTermsOfUseData: LegalData = {
 							"Nous nous efforçons de répondre aux demandes dans un délai raisonnable et de résoudre les incidents rapidement. Toutefois, nous ne pouvons garantir des délais de résolution spécifiques.",
 						],
 						[
-							"En complément, nous proposons également des formations payantes pour approfondir la maîtrise du Logiciel. Ces formations, adaptées à vos besoins, sont organisées sur demande. Pour plus d’informations sur les modalités et tarifs, veuillez consulter les CGV ou nous contacter à contact@seconde.app.",
+							"En complément, nous proposons également des formations payantes pour approfondir la maîtrise du Logiciel. Ces formations, adaptées à vos besoins, sont organisées sur demande. Pour plus d’informations sur les modalités, veuillez nous contacter à contact@seconde.app.",
 						],
 					],
 				},
 			],
 		},
 		{
-			title: "Conditions d'utilisation de la Licence",
-			content: [
+			title: "Conditions d'utilisation des Services",
+			subSections: [
 				{
-					texts: [
-						[
-							"Seconde vous accorde une licence d’utilisation non exclusive, non cessible et non transférable pour accéder au Logiciel dans le cadre de votre activité de dépôt-vente. Vous vous engagez à :",
-						],
-						[
-							"- Utiliser le Logiciel uniquement à des fins professionnelles et conformément à la loi.",
-						],
-						[
-							"- Ne pas tenter de copier, modifier, désassembler ou altérer techniquement  le Logiciel de manière frauduleuse.",
-						],
-						[
-							"- Respecter les droits de propriété intellectuelle relatifs au Logiciel.",
-						],
-						[
-							"Toute violation de ces engagements pourra entraîner la suspension ou la résiliation immédiate de votre accès au Logiciel.",
-						],
+					title: "Utilisation acceptable",
+					content: [
+						{
+							texts: [
+								[
+									"Vous vous engagez à utiliser le Logiciel exclusivement à des fins professionnelles relatives à votre activité de dépôt-vente, et d’adopter un comportement conforme aux conditions de votre abonnement, aux lois en vigueur et aux droits de propriété intellectuelle relatifs au Logiciel.",
+								],
+							],
+						},
 					],
 				},
-			],
-		},
-		{
-			title: "Période d'essai",
-			content: [
 				{
-					texts: [
-						[
-							"Les présentes CGU s'appliquent également pendant la période d'essai gratuite du logiciel. Durant cette période, vous bénéficiez des mêmes droits et obligations liés à la licence d’utilisation, mais pour une durée limitée.",
-						],
-						[
-							"À la fin de cette période d'essai, vous aurez la possibilité de souscrire à un abonnement pour continuer à utiliser le logiciel. Si vous ne confirmez pas votre abonnement, l'accès au logiciel sera suspendu.",
-						],
-						[
-							"Pour plus d'informations sur la période d’essai, ainsi que sur la manière dont vos données relatives à cette période sont traitées et conservées, nous vous invitons à consulter les CGV et la Politique de confidentialité.",
-						],
+					title: "Restrictions d’utilisation",
+					content: [
+						{
+							texts: [
+								[
+									"Vous vous interdisez strictement toute utilisation contraire aux présentes conditions, y compris, sans que cette liste soit limitative :",
+								],
+								[
+									"- D’utiliser le Logiciel à des fins autres que celles prévues et autorisées dans votre abonnement ;",
+									"- D’utiliser le Logiciel à des fins frauduleuses ou illégales ;",
+									"- De tenter de copier, modifier, traduire, adapter, arranger, désassembler, décompiler, altérer techniquement ou contourner les restrictions intégrées au Logiciel ;",
+									"- De tenter d’accéder à des données ou fonctionnalités sans autorisation ;",
+									"- De mettre le Logiciel ou ses Services à disposition d’un tiers, sous quelque forme que ce soit ;",
+									"- De corriger vous-même toute anomalie, quelle qu’elle soit, Seconde se réservant seul cette responsabilité et ce droit ;",
+									"- D’utiliser le Logiciel d'une manière susceptible de nuire à ses performances, à sa sécurité ou à l’expérience des autres utilisateurs ;",
+									"- De revendiquer les droits de propriété intellectuelle relatifs au Logiciel.",
+								],
+							],
+						},
 					],
 				},
-			],
-		},
-		{
-			title: "Conditions d'utilisation de la Licence",
-			content: [
 				{
-					texts: [
-						[
-							"Seconde vous accorde une licence d’utilisation non exclusive, non cessible et non transférable pour accéder au Logiciel dans le cadre de votre activité de dépôt-vente. Vous vous engagez à :",
-						],
-						[
-							"- Utiliser le Logiciel uniquement à des fins professionnelles et conformément à la loi.",
-						],
-						[
-							"- Ne pas tenter de copier, modifier, désassembler ou altérer techniquement  le Logiciel de manière frauduleuse.",
-						],
-						[
-							"- Respecter les droits de propriété intellectuelle relatifs au Logiciel.",
-						],
-						[
-							"Toute violation de ces engagements pourra entraîner la suspension ou la résiliation immédiate de votre accès au Logiciel.",
-						],
+					title: "Sanctions en cas de non-respect",
+					content: [
+						{
+							texts: [
+								[
+									"Toute violation des engagements et restrictions ci-dessus pourra entraîner la suspension immédiate ou la résiliation définitive de votre accès au Logiciel ;",
+								],
+								[
+									"Seconde se réserve le droit d’engager des actions légales pour obtenir réparation des préjudices subis.",
+								],
+							],
+						},
 					],
 				},
 			],
@@ -231,65 +220,58 @@ const generalTermsOfUseData: LegalData = {
 				{
 					texts: [
 						[
-							"Seconde se réserve le droit de mettre à jour et d’améliorer le Logiciel à tout moment. Ces mises à jour peuvent inclure de nouvelles fonctionnalités, des corrections de bugs ou des améliorations des performances.",
-						],
-						[
-							"Vous acceptez que ces mises à jour soient nécessaires pour continuer à utiliser le Logiciel.",
+							"Seconde se réserve le droit de mettre à jour et d’améliorer le Logiciel à tout moment. Ces mises à jour peuvent inclure notamment de nouvelles fonctionnalités, des corrections de bugs ou des améliorations des performances.",
 						],
 					],
 				},
 			],
 		},
 		{
-			title: "Durée et Résiliation",
+			title: "Responsabilité liée à la migration des données",
 			content: [
 				{
 					texts: [
 						[
-							"Votre contrat d'utilisation est conclu pour une durée indéterminée à compter de votre inscription. Vous pouvez résilier votre compte à tout moment en nous contactant par email à contact@seconde.app. La résiliation prendra effet à la fin du mois en cours, à condition que la demande soit faite avant le 20 du mois.",
-						],
-						[
-							"Seconde se réserve le droit de suspendre ou résilier votre compte en cas de non-respect des présentes CGU ou d’utilisation frauduleuse du Logiciel.",
+							"Vous êtes seul responsable de la qualité, de la précision et de l'exactitude des données migrées depuis un ancien logiciel. Seconde ne saurait être tenu responsable des erreurs, pertes de données ou incompatibilités liées au processus de migration, celui-ci reposant sur les fichiers et informations que vous avez fournis.",
 						],
 					],
 				},
 			],
 		},
 		{
-			title: "Utilisation acceptable",
+			title: "Hébergement des Données",
 			content: [
 				{
 					texts: [
 						[
-							"En utilisant le Logiciel, vous vous engagez à adopter un comportement conforme aux lois et règlements en vigueur et à  :",
+							"Le Logiciel est hébergé sur les serveurs d’AWS situés en France. Ces serveurs sont certifiés conformes aux normes de sécurité internationales, notamment ISO 27001, ISO 27017, et ISO 27018, garantissant un haut niveau de protection des données.",
 						],
 						[
-							"- Utiliser le Logiciel uniquement pour les finalités professionnelles relatives à votre activité de dépôt-vente.",
-						],
-						[
-							"- Ne pas utiliser le Logiciel à des fins illégales, nuisibles ou frauduleuses.",
-						],
-						[
-							"- Ne pas tenter d’accéder à des données ou fonctionnalités sans autorisation.",
-						],
-						[
-							"Ne pas diffuser de contenu illégal, offensant ou portant atteinte aux droits des tiers.",
+							"Toutes les données collectées et traitées dans le cadre de l’utilisation du Logiciel sont exclusivement stockées sur le territoire français, assurant leur conformité aux réglementations françaises et européennes, notamment en matière de fiscalité et de protection des données personnelles.",
 						],
 					],
 				},
 			],
 		},
 		{
-			title: "Sécurité et Protection des Données",
+			title: "Sécurité des Données et RGPD",
 			content: [
 				{
 					texts: [
 						[
-							"Seconde s’engage à protéger vos données personnelles conformément aux réglementations en vigueur, notamment le Règlement Général sur la Protection des Données (RGPD). Vos données sont hébergées en France et sécurisées grâce à des mesures techniques et organisationnelles adaptées, conformément aux normes de sécurité françaises et internationales.",
+							"Toutes vos données sont traitées dans le respect strict du RGPD, auquel nous adhérons pleinement.",
 						],
 						[
-							"Pour plus de détails sur la sécurité des données et leur hébergement, nous vous invitons à consulter nos CGV. ",
-							"Pour comprendre précisément comment vos données sont collectées, traitées, et conservées, veuillez consulter notre Politique de confidentialité.",
+							"Certaines données, en particulier celles relatives aux encaissements, sont également régies par des dispositions légales spécifiques, telles que l’article L102 B du Livre des Procédures Fiscales (LPF) et le Bulletin Officiel des Finances Publiques - Impôts (BOFIP), BOI-TVA-DECLA-30-10-30. Ces réglementations garantissent la sécurité, l'intégrité et la conservation des données dans le respect des exigences légales.",
+						],
+						[
+							"Dans le cadre de l’utilisation du Logiciel, des e-mails automatiques pourront être envoyés à vos clients pour la gestion et le suivi de leurs dépôts. Vous êtes responsable de vous assurer que vos clients ont donné leur consentement à recevoir ces communications, conformément au RGPD et aux lois applicables.",
+						],
+						[
+							"Pour plus d’informations sur la manière dont nous traitons et conservons vos données et celles de vos clients, nous vous invitons à consulter notre Politique de Confidentialité.",
+						],
+						[
+							"En acceptant les Conditions Générales d’Utilisation, vous confirmez avoir pris connaissance de notre Politique de Confidentialité et en accepter les termes.",
 						],
 					],
 				},
@@ -306,46 +288,19 @@ const generalTermsOfUseData: LegalData = {
 						[
 							"Une attestation de conformité vous sera délivrée lors de la souscription à notre service.",
 						],
+						["Vous êtes tenu de :"],
 						[
-							"Vous trouverez des explications détaillées sur l'obligation de certification et les modalités de délivrance de cette attestation, dans nos CGV.",
-						],
-					],
-				},
-			],
-		},
-		{
-			title: "Limitation de responsabilité",
-			content: [
-				{
-					texts: [
-						[
-							"Seconde s'efforce de fournir un service de qualité, mais ne peut être tenu responsable en cas de :",
-						],
-						["- Perte de données."],
-						["- Utilisation inappropriée du Logiciel."],
-						[
-							"- Dysfonctionnement technique indépendant de notre volonté.",
+							"- Signer l’attestation de conformité lors de la souscription ou lors de la mise à jour vers une version majeure du Logiciel.",
+							"- Utiliser le Logiciel de manière conforme à ses fonctionnalités et aux obligations légales prévues par la réglementation fiscale.",
 						],
 						[
-							"- Dommages indirects tels que perte de profit ou d’opportunité.",
+							"En cas de contrôle fiscal, vous êtes responsable de la conservation et de la présentation de l’attestation à l’administration.",
 						],
 						[
-							"En tout état de cause, la responsabilité de Seconde est limitée au montant que vous avez payé pour l'utilisation du Logiciel.",
-						],
-					],
-				},
-			],
-		},
-		{
-			title: "Force majeure",
-			content: [
-				{
-					texts: [
-						[
-							"Seconde ne pourra être tenu responsable des retards ou manquements dans l’exécution de ses obligations résultant d’un événement de force majeure. Par force majeure, on entend notamment des catastrophes naturelles, des pannes d'infrastructures ou des incidents techniques indépendants de notre volonté.",
+							"Toute modification, utilisation détournée ou non conforme de votre part peut entraîner une perte de conformité et engage votre seule responsabilité.",
 						],
 						[
-							"Pour plus de détails sur les conséquences contractuelles d'un événement de force majeure, veuillez consulter nos CGV.",
+							"Pour plus de détails sur les obligations légales et les modalités de délivrance de l’attestation, nous vous invitons à consulter la section correspondante dans nos CGV.",
 						],
 					],
 				},
@@ -357,7 +312,7 @@ const generalTermsOfUseData: LegalData = {
 				{
 					texts: [
 						[
-							"Les présentes CGU sont régies par le droit français. ",
+							"Les présentes CGU sont régies par le droit français.",
 						],
 						[
 							"En cas de litige, les parties s'efforceront de résoudre le problème à l’amiable. À défaut, les tribunaux français seront seuls compétents.",
@@ -367,12 +322,19 @@ const generalTermsOfUseData: LegalData = {
 			],
 		},
 		{
-			title: "Modifications des CGU",
+			title: "Modification des CGU",
 			content: [
 				{
 					texts: [
 						[
-							"Seconde se réserve le droit de modifier les présentes CGU à tout moment. Vous serez informé des modifications par email ou lors de votre connexion au logiciel. Si vous continuez à utiliser le logiciel après notification des modifications, cela vaut acceptation des nouvelles CGU.",
+							"Seconde se réserve le droit de modifier les CGU à tout moment. Vous serez informé des modifications par email ou lors de votre connexion au logiciel, 15 jours avant les modifications.",
+						],
+						[
+							"Si vous souhaitez exprimer votre désaccord ou obtenir des explications supplémentaires concernant ces modifications, vous pouvez nous contacter à l'adresse  contact@seconde.app.",
+							"Si vous n’acceptez pas les nouvelles CGU, vous pouvez résilier votre abonnement sans préavis.",
+						],
+						[
+							"Si vous continuez à utiliser le logiciel après notification des modifications, cela vaut acceptation des nouvelles CGU.",
 						],
 					],
 				},
