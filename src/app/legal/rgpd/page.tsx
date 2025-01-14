@@ -16,6 +16,37 @@ export default function Page() {
 				</p>
 			</div>
 			<div className="w-full flex flex-col gap-16">
+				{data.preamble && (
+					<div className="w-full flex flex-col gap-4">
+						{data.preamble.content.map(
+							(preambleItem, preambleIndex) => (
+								<div
+									key={preambleIndex}
+									className="flex flex-col gap-6"
+								>
+									{preambleItem.texts.map(
+										(texts, textsIndex) => (
+											<div key={textsIndex}>
+												{texts.map(
+													(text, textIndex) => (
+														<p key={textIndex}>
+															{text}
+														</p>
+													)
+												)}
+											</div>
+										)
+									)}
+									{preambleItem.table && (
+										<LegalTable
+											table={preambleItem.table}
+										/>
+									)}
+								</div>
+							)
+						)}
+					</div>
+				)}
 				{data.sections.map((section, index) => (
 					<div key={index} className="flex flex-col gap-4">
 						<h2 className="text-2xl font-semibold text-left">

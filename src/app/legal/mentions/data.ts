@@ -27,7 +27,7 @@ const legalNoticeData: LegalData = {
 				{
 					texts: [
 						[
-							"Le propriétaire du site Ronan Poder décline toute responsabilité quant à l'exactitude, la pertinence ou l'exhaustivité des informations fournies sur ce site. L'utilisation des informations contenues sur ce site se fait sous la seule responsabilité de l'utilisateur.",
+							"Le propriétaire du site Seconde SARL décline toute responsabilité quant à l'exactitude, la pertinence ou l'exhaustivité des informations fournies sur ce site. L'utilisation des informations contenues sur ce site se fait sous la seule responsabilité de l'utilisateur.",
 						],
 					],
 				},
