@@ -336,119 +336,119 @@ const generalTermsOfSalesData: LegalData = {
 						},
 					],
 				},
+			],
+		},
+		{
+			title: "Force Majeure",
+			content: [
 				{
-					title: "Force Majeure",
-					content: [
-						{
-							texts: [
-								[
-									"Seconde ne pourra être tenu responsable des retards ou manquements dans l’exécution de ses obligations résultant d’un événement de force majeure.",
-								],
-								[
-									"Par force majeure, on entend notamment, sans que cette liste soit exhaustive : les catastrophes naturelles, les interruptions des réseaux de télécommunication ou d’énergie, les incidents techniques indépendants de notre volonté ou les pannes d’infrastructures essentielles.",
-								],
-								[
-									"Si la durée de l’événement de force majeure dépasse un mois, chacune des parties pourra résilier le Contrat sans préavis ni indemnité, par l’envoi d’une lettre recommandée avec accusé de réception.",
-								],
-							],
-						},
+					texts: [
+						[
+							"Seconde ne pourra être tenu responsable des retards ou manquements dans l’exécution de ses obligations résultant d’un événement de force majeure.",
+						],
+						[
+							"Par force majeure, on entend notamment, sans que cette liste soit exhaustive : les catastrophes naturelles, les interruptions des réseaux de télécommunication ou d’énergie, les incidents techniques indépendants de notre volonté ou les pannes d’infrastructures essentielles.",
+						],
+						[
+							"Si la durée de l’événement de force majeure dépasse un mois, chacune des parties pourra résilier le Contrat sans préavis ni indemnité, par l’envoi d’une lettre recommandée avec accusé de réception.",
+						],
 					],
 				},
+			],
+		},
+		{
+			title: "Propriété intellectuelle",
+			content: [
 				{
-					title: "Propriété intellectuelle",
-					content: [
-						{
-							texts: [
-								[
-									"Nous vous garantissons que nous disposons de tous les droits de propriété intellectuelle permettant de conclure le Contrat et à ce titre, nous garantissons que les Services fournis en exécution du Contrat ne portent pas atteinte à des droits de tiers et ne constituent pas une contrefaçon d'une œuvre préexistante.",
-								],
-							],
-						},
+					texts: [
+						[
+							"Nous vous garantissons que nous disposons de tous les droits de propriété intellectuelle permettant de conclure le Contrat et à ce titre, nous garantissons que les Services fournis en exécution du Contrat ne portent pas atteinte à des droits de tiers et ne constituent pas une contrefaçon d'une œuvre préexistante.",
+						],
 					],
 				},
+			],
+		},
+		{
+			title: " Communication et références commerciales",
+			content: [
 				{
-					title: " Communication et références commerciales",
-					content: [
-						{
-							texts: [
-								[
-									"Vous nous autorisez à mentionner votre nom et votre qualité d’utilisateur lors d'échanges avec des prospects, partenaires ou autres clients potentiels dans le cadre de discussions commerciales.",
-								],
-								[
-									"Vous nous autorisez à afficher votre nom et/ou votre logo sur notre site vitrine.",
-								],
-								[
-									"Ces utilisations seront effectuées de manière professionnelle et respectueuse de votre image. Aucune donnée confidentielle ne sera divulguée sans autorisation préalable. Cette autorisation est accordée à titre gratuit et peut être révoquée à tout moment sur simple demande écrite, avec un délai raisonnable pour appliquer cette modification.",
-								],
-							],
-						},
+					texts: [
+						[
+							"Vous nous autorisez à mentionner votre nom et votre qualité d’utilisateur lors d'échanges avec des prospects, partenaires ou autres clients potentiels dans le cadre de discussions commerciales.",
+						],
+						[
+							"Vous nous autorisez à afficher votre nom et/ou votre logo sur notre site vitrine.",
+						],
+						[
+							"Ces utilisations seront effectuées de manière professionnelle et respectueuse de votre image. Aucune donnée confidentielle ne sera divulguée sans autorisation préalable. Cette autorisation est accordée à titre gratuit et peut être révoquée à tout moment sur simple demande écrite, avec un délai raisonnable pour appliquer cette modification.",
+						],
 					],
 				},
+			],
+		},
+		{
+			title: "Réversibilité",
+			content: [
 				{
-					title: "Réversibilité",
-					content: [
-						{
-							texts: [
-								[
-									"À tout moment en cours d'exécution du Contrat, ou si le Contrat est résilié, Seconde s'engage à vous aider à transférer vos données vers un autre système.",
-								],
-								[
-									"Cette aide au transfert correspond à la restitution de vos données. Celles-ci vous seront envoyées par e-mail sous forme de fichier SQL ou .CSV, format facilement exploitable par un tiers.",
-								],
-								[
-									"Les opérations de transfert concernent les articles en stock et les fichiers clients.",
-								],
-							],
-						},
+					texts: [
+						[
+							"À tout moment en cours d'exécution du Contrat, ou si le Contrat est résilié, Seconde s'engage à vous aider à transférer vos données vers un autre système.",
+						],
+						[
+							"Cette aide au transfert correspond à la restitution de vos données. Celles-ci vous seront envoyées par e-mail sous forme de fichier SQL ou .CSV, format facilement exploitable par un tiers.",
+						],
+						[
+							"Les opérations de transfert concernent les articles en stock et les fichiers clients.",
+						],
 					],
 				},
+			],
+		},
+		{
+			title: "Loi applicable et Juridiction compétente",
+			content: [
 				{
-					title: "Loi applicable et Juridiction compétente",
-					content: [
-						{
-							texts: [
-								["Le Contrat est régi par la loi française."],
-								[
-									"En cas de difficulté sur l'interprétation ou l'exécution des CGV, les parties s'engagent à tenter de résoudre le problème à l’amiable. En cas de désaccord persistant, les tribunaux français seront seuls compétents.",
-								],
-							],
-						},
+					texts: [
+						["Le Contrat est régi par la loi française."],
+						[
+							"En cas de difficulté sur l'interprétation ou l'exécution des CGV, les parties s'engagent à tenter de résoudre le problème à l’amiable. En cas de désaccord persistant, les tribunaux français seront seuls compétents.",
+						],
 					],
 				},
+			],
+		},
+		{
+			title: "Dispositions diverses",
+			content: [
 				{
-					title: "Dispositions diverses",
-					content: [
-						{
-							texts: [
-								[
-									"Si une ou plusieurs clauses sont déclarées nulles par une décision de justice ou s'avèrent impossible à mettre en œuvre, la validité des autres clauses ne sera pas affectée et les parties s'engagent à négocier de bonne foi une disposition de remplacement.",
-								],
-								[
-									"Le fait pour une partie de ne pas réclamer l’application d'une clause du Contrat ou de tolérer temporairement ou durablement son non-respect, ne pourra en aucun cas être interprété comme une renonciation à ses droits. De même, si une partie tolère un manquement ou une exécution imparfaite du Contrat, cela ne donne aucun droit supplémentaire à l'autre partie.",
-								],
-							],
-						},
+					texts: [
+						[
+							"Si une ou plusieurs clauses sont déclarées nulles par une décision de justice ou s'avèrent impossible à mettre en œuvre, la validité des autres clauses ne sera pas affectée et les parties s'engagent à négocier de bonne foi une disposition de remplacement.",
+						],
+						[
+							"Le fait pour une partie de ne pas réclamer l’application d'une clause du Contrat ou de tolérer temporairement ou durablement son non-respect, ne pourra en aucun cas être interprété comme une renonciation à ses droits. De même, si une partie tolère un manquement ou une exécution imparfaite du Contrat, cela ne donne aucun droit supplémentaire à l'autre partie.",
+						],
 					],
 				},
+			],
+		},
+		{
+			title: "Modifications des CGV",
+			content: [
 				{
-					title: "Modifications des CGV",
-					content: [
-						{
-							texts: [
-								[
-									"Seconde se réserve le droit de modifier les CGV à tout moment. Vous serez informé de toute modification par email ou lors de votre connexion au logiciel, 15 jours avant les modifications.",
-								],
-								[
-									"Si vous souhaitez exprimer votre désaccord ou obtenir des explications supplémentaires concernant ces modifications, vous pouvez nous contacter à l'adresse contact@seconde.app.",
-								],
-								[
-									"Si vous n’acceptez pas les nouvelles CGV, vous pouvez résilier votre abonnement sans préavis.",
-								],
-								[
-									"Si vous continuez à utiliser le logiciel après application des modifications, cela vaut acceptation des nouvelles CGV.",
-								],
-							],
-						},
+					texts: [
+						[
+							"Seconde se réserve le droit de modifier les CGV à tout moment. Vous serez informé de toute modification par email ou lors de votre connexion au logiciel, 15 jours avant les modifications.",
+						],
+						[
+							"Si vous souhaitez exprimer votre désaccord ou obtenir des explications supplémentaires concernant ces modifications, vous pouvez nous contacter à l'adresse contact@seconde.app.",
+						],
+						[
+							"Si vous n’acceptez pas les nouvelles CGV, vous pouvez résilier votre abonnement sans préavis.",
+						],
+						[
+							"Si vous continuez à utiliser le logiciel après application des modifications, cela vaut acceptation des nouvelles CGV.",
+						],
 					],
 				},
 			],
