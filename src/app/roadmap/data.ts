@@ -3,7 +3,7 @@ export type RoadmapItem = {
 	description: string[];
 };
 
-export const updatedAt = new Date("2024-11-30");
+export const updatedAt = new Date("2025-01-14");
 
 export type RoadmapColumn = {
 	title: string;
@@ -72,17 +72,17 @@ const columns: RoadmapColumn[] = [
 					"Vos clients peuvent acheter une carte cadeau, celle-ci sera automatiquement créditée sur présentation lors d’un achat.",
 				],
 			},
-		],
-	},
-	{
-		title: "Dans les 3 prochains mois",
-		items: [
 			{
 				title: "Paiement en plusieurs fois",
 				description: [
 					"Offrez à votre client la possibilité de payer en plusieurs fois, et retouvez facilement vos reglements en attente.",
 				],
 			},
+		],
+	},
+	{
+		title: "Dans les 3 prochains mois",
+		items: [
 			{
 				title: "Nouvelle page d'articles",
 				description: [
