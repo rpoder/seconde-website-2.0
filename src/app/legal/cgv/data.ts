@@ -40,7 +40,7 @@ const generalTermsOfSalesData: LegalData = {
 							"Seconde, nous, notre : désigne la Société à responsabilité limitée Seconde, au capital de 1000 euros, ayant son siège social au 60 rue François 1er, 75008 Paris.",
 						],
 						[
-							"Vous : désigne toute personne physique ayant un compte sur le logiciel Seconde.",
+							"Vous : désigne toute personne morale ayant souscrit au présent Contrat et/ou toute personne physique ayant un compte sur le logiciel Seconde.",
 						],
 						[
 							"Les CGV : désigne les présentes Conditions Générales de Vente.",
@@ -118,12 +118,12 @@ const generalTermsOfSalesData: LegalData = {
 					],
 				},
 				{
-					title: "Résiliation en cas d'utilisation frauduleuse",
+					title: "Résiliation en cas d'utilisation frauduleuse ou de manquement grave",
 					content: [
 						{
 							texts: [
 								[
-									"En cas d’utilisation frauduleuse, de détournement ou de non-respect des conditions prévues dans les CGV ou les CGU, Seconde se réserve le droit de résilier immédiatement et sans préavis votre abonnement.",
+									"En cas de manquement grave, d’utilisation frauduleuse, de détournement, de non-respect des conditions prévues dans les CGV ou les CGU ou de non-respect de la législation en vigueur, Seconde se réserve le droit de résilier immédiatement et sans préavis votre abonnement.",
 								],
 								[
 									"Cette résiliation pourra être effectuée sans recours à des formalités judiciaires, et n’exclut pas la possibilité pour Seconde d’engager des actions légales afin d’obtenir réparation du préjudice subi.",
@@ -312,13 +312,16 @@ const generalTermsOfSalesData: LegalData = {
 						{
 							texts: [
 								[
-									"Seconde s'engage à fournir un logiciel conforme à sa destination et à garantir un service de qualité. Toutefois, sa responsabilité est strictement limitée aux engagements expressément prévus dans le cadre du Contrat.",
+									"Seconde s'engage, dans le cadre d’une obligation de moyens, à fournir un logiciel conforme à son usage prévu et à garantir un service de qualité. Cependant, la responsabilité de Seconde est strictement limitée aux engagements spécifiquement énoncés dans le Contrat.",
 								],
 								[
-									"Seconde ne pourra en aucun cas être tenu responsable des dommages indirects que vous pourriez subir. Les dommages indirects incluent notamment, sans que cette liste soit exhaustive : la perte de profits, la perte ou corruption de données, la perte d’opportunités, ou tout préjudice commercial, ainsi que les réclamations de tiers, même si Seconde avait été informé de la possibilité de tels dommages.",
+									"Seconde ne pourra être tenu responsable en cas de faute, d'erreur, de négligence ou de défaillance de votre part ou de celle de vos collaborateurs, ni en cas de non-respect de vos obligations prévues par le Contrat ou des conseils et avertissements fournis par Seconde.",
 								],
 								[
-									"De plus, les dysfonctionnements techniques ou interruptions de service résultant de causes externes, telles que des pannes d’infrastructures ou des incidents chez des fournisseurs tiers, ne sauraient engager la responsabilité de Seconde.",
+									"En aucun cas, Seconde ne pourra être tenu responsable de dommages indirects que vous pourriez subir, tels que, sans que cette liste soit limitative : la perte de profits, la perte ou corruption de données, la perte d’opportunités, ou tout préjudice commercial, ainsi que les réclamations de tiers, même si Seconde avait été informé de la possibilité de tels dommages.",
+								],
+								[
+									"Par ailleurs, Seconde décline toute responsabilité en cas de dysfonctionnements techniques ou interruptions de service causés par des facteurs externes, comme des pannes d'infrastructures ou des incidents chez des fournisseurs tiers.",
 								],
 							],
 						},
@@ -362,7 +365,13 @@ const generalTermsOfSalesData: LegalData = {
 				{
 					texts: [
 						[
-							"Nous vous garantissons que nous disposons de tous les droits de propriété intellectuelle permettant de conclure le Contrat et à ce titre, nous garantissons que les Services fournis en exécution du Contrat ne portent pas atteinte à des droits de tiers et ne constituent pas une contrefaçon d'une œuvre préexistante.",
+							"Seconde garantit disposer de l'ensemble des droits de propriété intellectuelle nécessaires pour conclure le Contrat. À ce titre, nous certifions que les Services fournis dans le cadre du Contrat ne portent pas atteinte aux droits de tiers et ne constituent pas une contrefaçon d'œuvres préexistantes.",
+						],
+						[
+							"En outre, l'intégralité des droits de propriété intellectuelle liés au Logiciel, à ses évolutions, mises à jour et à la documentation qui l'accompagne demeure exclusivement la propriété de Seconde. Ces droits ne font l'objet d'aucune cession dans le cadre du Contrat.",
+						],
+						[
+							"Seconde se réserve exclusivement le droit d'intervenir sur le Logiciel, notamment pour en corriger toute erreur, apporter des modifications ou des améliorations.",
 						],
 					],
 				},
@@ -411,7 +420,7 @@ const generalTermsOfSalesData: LegalData = {
 					texts: [
 						["Le Contrat est régi par la loi française."],
 						[
-							"En cas de difficulté sur l'interprétation ou l'exécution des CGV, les parties s'engagent à tenter de résoudre le problème à l’amiable. En cas de désaccord persistant, les tribunaux français seront seuls compétents.",
+							"En cas de difficulté sur l'interprétation ou l'exécution des CGV, les parties s'engagent à tenter de résoudre le problème à l’amiable. En cas de désaccord persistant, les tribunaux de Paris seront seuls compétents.",
 						],
 					],
 				},

@@ -410,7 +410,7 @@ const privacyPolicyData: LegalData = {
 							],
 							[
 								"Les données personnelles de vos clients",
-								"Toute la durée d’existence de votre Compte Seconde, afin de vous fournir nos Services. Après résiliation de votre abonnement, les données personnelles seront anonymisées, sauf demande contraire du client.",
+								"Toute la durée d’existence de votre Compte Seconde, afin de vous fournir nos Services. Après résiliation de votre abonnement, les données personnelles seront anonymisées au bout de trois mois, sauf demande contraire du client.",
 								"Exécution d'obligations contractuelles et RGPD",
 							],
 							[

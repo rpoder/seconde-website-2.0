@@ -40,7 +40,7 @@ const generalTermsOfUseData: LegalData = {
 							"Seconde, nous, notre : désigne la Société à responsabilité limitée Seconde, au capital de 1000 euros, ayant son siège social au 60 rue François 1er, 75008 Paris.",
 						],
 						[
-							"Vous : désigne toute personne physique ayant un compte sur le logiciel Seconde.",
+							"Vous : désigne toute personne morale ayant souscrit au présent Contrat et/ou toute personne physique ayant un compte sur le logiciel Seconde.",
 						],
 						[
 							"Les CGU : désigne les présentes Conditions Générales d’Utilisation.",
@@ -227,13 +227,30 @@ const generalTermsOfUseData: LegalData = {
 			],
 		},
 		{
-			title: "Responsabilité liée à la migration des données",
-			content: [
+			title: "Responsabilité liée aux données",
+			subSections: [
 				{
-					texts: [
-						[
-							"Vous êtes seul responsable de la qualité, de la précision et de l'exactitude des données migrées depuis un ancien logiciel. Seconde ne saurait être tenu responsable des erreurs, pertes de données ou incompatibilités liées au processus de migration, celui-ci reposant sur les fichiers et informations que vous avez fournis.",
-						],
+					title: "Données migrées",
+					content: [
+						{
+							texts: [
+								[
+									"Vous êtes seul responsable de la qualité, de la précision et de l'exactitude des données migrées depuis un ancien logiciel. Seconde ne saurait être tenu responsable des erreurs, pertes de données ou incompatibilités liées au processus de migration, celui-ci reposant sur les fichiers et informations que vous avez fournis.",
+								],
+							],
+						},
+					],
+				},
+				{
+					title: "Données saisies dans Seconde",
+					content: [
+						{
+							texts: [
+								[
+									"Vous êtes également responsable de l'exactitude, de la mise à jour et de la conformité des données saisies dans le Logiciel Seconde. Seconde ne pourra être tenu responsable des conséquences d'erreurs, d'omissions ou de modifications que vous pourriez apporter aux données.",
+								],
+							],
+						},
 					],
 				},
 			],
@@ -315,7 +332,7 @@ const generalTermsOfUseData: LegalData = {
 							"Les présentes CGU sont régies par le droit français.",
 						],
 						[
-							"En cas de litige, les parties s'efforceront de résoudre le problème à l’amiable. À défaut, les tribunaux français seront seuls compétents.",
+							"En cas de litige, les parties s'efforceront de résoudre le problème à l’amiable. À défaut, les tribunaux de Paris seront seuls compétents.",
 						],
 					],
 				},
