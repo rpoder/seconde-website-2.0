@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/accordion";
 import { format } from "date-fns";
 import { fr } from "date-fns/locale";
+import { CircleCheck } from "lucide-react";
 
 export default function page() {
 	return (
@@ -24,7 +25,12 @@ export default function page() {
 						key={index}
 						className="flex flex-col w-full md:gap-8 gap-2"
 					>
-						<h2 className="border px-4 py-4">{column.title}</h2>
+						<div className="border px-4 py-4 flex gap-2 items-center">
+							{index === 0 && (
+								<CircleCheck className="text-valid" />
+							)}
+							<h2>{column.title}</h2>
+						</div>
 						<div className="flex flex-col">
 							{column.items.map((item, index) => (
 								<Accordion

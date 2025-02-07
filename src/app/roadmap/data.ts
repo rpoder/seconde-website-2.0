@@ -3,7 +3,7 @@ export type RoadmapItem = {
 	description: string[];
 };
 
-export const updatedAt = new Date("2025-01-14");
+export const updatedAt = new Date("2025-02-07");
 
 export type RoadmapColumn = {
 	title: string;
@@ -78,11 +78,23 @@ const columns: RoadmapColumn[] = [
 					"Offrez à votre client la possibilité de payer en plusieurs fois, et retouvez facilement vos reglements en attente.",
 				],
 			},
+			{
+				title: "Campagnes de soldes",
+				description: [
+					"Lancez des campagnes de soldes en appliquant une réduction sur tout ou partie de vos articles.",
+				],
+			},
 		],
 	},
 	{
 		title: "Dans les 3 prochains mois",
 		items: [
+			{
+				title: "Vendez des meubles et des objets",
+				description: [
+					"Seconde prend en charge de nouvelles catégories d'articles avec leurs propriétés propres. Votre base de données est enrichie et toujours bien organisée !",
+				],
+			},
 			{
 				title: "Nouvelle page d'articles",
 				description: [
@@ -99,12 +111,6 @@ const columns: RoadmapColumn[] = [
 				title: "Nouveau dashboard",
 				description: [
 					"De nouvelles données concernant vos ventes et chiffres clés sont disponibles sur votre dashboard. Agencez-les selon vos intérêts.",
-				],
-			},
-			{
-				title: "Campagnes de soldes",
-				description: [
-					"Lancez des campagnes de soldes en appliquant une réduction sur tout ou partie de vos articles.",
 				],
 			},
 			{
