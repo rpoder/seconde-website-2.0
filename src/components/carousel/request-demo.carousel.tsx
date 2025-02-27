@@ -46,6 +46,12 @@ const secondSlide: InputCarouselItemField[] = [
 		label: "Nom de votre boutique",
 		placeholder: "Julie dressing",
 	},
+	{
+		name: "message",
+		label: "Votre message",
+		placeholder: "Insérez votre message ici",
+		isTextArea: true,
+	},
 ];
 
 const slides: InputCarouselItemField[][] = [firstSlide, secondSlide];

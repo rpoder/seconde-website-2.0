@@ -62,6 +62,7 @@ export default function InputsCarouselItem({
 		if (event.key === "Enter") {
 			if (canGoNext()) {
 				if (isLast) {
+					return;
 					handleSubmit(form.getValues());
 				}
 				onClick();
@@ -135,14 +136,7 @@ export default function InputsCarouselItem({
 						/>
 					))}
 					{isLast ? (
-						<Button
-							onKeyDown={(event) => {
-								if (event.key === "Enter") {
-								}
-							}}
-						>
-							Terminer
-						</Button>
+						<Button>Valider</Button>
 					) : (
 						<Button
 							onClick={onClick}

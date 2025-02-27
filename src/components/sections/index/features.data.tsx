@@ -6,10 +6,6 @@ export type Feature = {
 export const features: Feature[] = [
 	{ title: "Gestion automatisée des cagnottes" },
 	{
-		title: "Application mobile déposant",
-		tag: "Courant 2025",
-	},
-	{
 		title: "Notifications email déposant",
 	},
 	{
