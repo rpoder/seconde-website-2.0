@@ -60,7 +60,7 @@ export default function Pricing() {
 				</div>
 			</div>
 			<div className="flex flex-col items-center py-6">
-				<h2 className="text-4xl">2 mois à 0€</h2>
+				<h2 className="text-4xl">Le premier mois à 0€</h2>
 				<p className="text-secondary-foreground">
 					pour les jeunes boutiques, et toujours sans engagement
 				</p>

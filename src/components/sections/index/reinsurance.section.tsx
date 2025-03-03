@@ -3,6 +3,7 @@ import LogoLaMome from "@/../public/assets/svg/logos_partners/logo_partner_la_m�
 import LogoOccasionnel from "@/../public/assets/svg/logos_partners/logo_partner_occsionnel.svg";
 import LogoUrbanExchange from "@/../public/assets/svg/logos_partners/logo_partner_urban_exchange.svg";
 import LogoLesTresorsDeCaro from "@/../public/assets/svg/logos_partners/logo_partner_trésors_de_caro.svg";
+import LogoAffairesASuivre from "@/../public/assets/svg/logos_partners/logo_partner_affaires_à_suivre.svg";
 import Image, { StaticImageData } from "next/image";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
@@ -36,6 +37,12 @@ export default function Reinsurance() {
 			name: "Les Trésors de Caro",
 			logo: LogoLesTresorsDeCaro,
 			url: "https://www.instagram.com/lestresorsdecaro_depotvente/",
+		},
+		{
+			name: "Affaires à suivre",
+			logo: LogoAffairesASuivre,
+			url: "https://www.instagram.com/affairesasuivre_depotventelyon/",
+			className: "w-48",
 		},
 	];
 

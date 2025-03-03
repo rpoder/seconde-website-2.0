@@ -121,9 +121,6 @@ export const featureGroups: FeatureGroup[] = [
 					"Confirmation de restitution et de paiement",
 				],
 			},
-			{
-				title: "Bientôt disponible : Notification des déposants via l’application mobile pour déposants",
-			},
 		],
 	},
 	{
