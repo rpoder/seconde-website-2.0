@@ -7,7 +7,6 @@ import {
 } from "@/components/ui/accordion";
 import { format } from "date-fns";
 import { fr } from "date-fns/locale";
-import { CircleCheck } from "lucide-react";
 
 export default function page() {
 	return (
