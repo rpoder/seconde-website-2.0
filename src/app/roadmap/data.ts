@@ -163,6 +163,12 @@ const columns: RoadmapColumn[] = [
 					"Enregistrez des dépôts de professionnels (assujettis ou non à la TVA) et offrez leur le système de suivi de ventes Seconde.",
 				],
 			},
+			{
+				title: "Seconde arrive en Suisse",
+				description: [
+					"Vous gérez un dépôt-vente en Suisse ? Utilisez Seconde en CHF et avec les taux de tva en vigueur en Suisse. Profitez d’exactement les mêmes fonctionnalités qu’en France.",
+				],
+			},
 		],
 	},
 ];
