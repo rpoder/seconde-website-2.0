@@ -4,6 +4,7 @@ import LogoOccasionnel from "@/../public/assets/svg/logos_partners/logo_partner_
 import LogoUrbanExchange from "@/../public/assets/svg/logos_partners/logo_partner_urban_exchange.svg";
 import LogoLesTresorsDeCaro from "@/../public/assets/svg/logos_partners/logo_partner_trésors_de_caro.svg";
 import LogoAffairesASuivre from "@/../public/assets/svg/logos_partners/logo_partner_affaires_à_suivre.svg";
+import LogoLaRitournelleReze from "@/../public/assets/svg/logos_partners/logo_partner_la_ritournelle.svg";
 import Image, { StaticImageData } from "next/image";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
@@ -43,6 +44,12 @@ export default function Reinsurance() {
 			logo: LogoAffairesASuivre,
 			url: "https://www.instagram.com/affairesasuivre_depotventelyon/",
 			className: "w-48",
+		},
+		{
+			name: "La Ritournelle Rezé",
+			logo: LogoLaRitournelleReze,
+			url: "https://www.instagram.com/laritournellereze/",
+			className: "w-28",
 		},
 	];
 
